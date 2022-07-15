@@ -860,7 +860,7 @@ font-size: 1.6vh;
   
   .site_content {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     position: fixed;
     display: grid;
     grid-template-columns: [first] 15% [second] 85% [third] 0;
@@ -954,6 +954,7 @@ top: 0;
       align-items: center;  
       justify-self: center;
       -webkit-tap-highlight-color: transparent;
+
       }
     
     .nav_buttons:hover {
@@ -990,6 +991,7 @@ top: 0;
   margin-top: 3%;
   margin-bottom: 3%;
   border-right: 1px solid #acacac4f;
+  overflow-y: scroll;
   }
 
   .bodystyle {
