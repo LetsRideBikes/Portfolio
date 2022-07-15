@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
-import RedirectPage from './Redirect';
+import Redirect from './Redirect';
 import { Routes, Route} from 'react-router-dom';
 
 
@@ -24,7 +24,7 @@ function App() {
       backgroundSize:"cover", 
       backgroundRepeat: 'no-repeat'}}>
         <Routes>
-<Route path='/RedirectPage' element={<RedirectPage />} />
+<Route path='/Redirect' element={<Redirect />} />
 </Routes>
      <div className="navigation_logo_container"><Header /></div>
      <div className="main_content"><Routes>

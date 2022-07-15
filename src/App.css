@@ -20,6 +20,10 @@ li {
   display: none;
 }
 
+*:focus {
+  outline: 0;
+  outline: none;
+  }
 
 .site_content {
 width: 100vw;
@@ -67,6 +71,7 @@ flex-flow: column;
   transition: 0.6s ease;
   cursor: pointer;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
   }
 
   .nav_container {
@@ -90,6 +95,7 @@ flex-flow: column;
     justify-content: space-evenly;
     align-items: center;  
     justify-self: center;
+    -webkit-tap-highlight-color: transparent;
     }
   
   .nav_buttons:hover {
@@ -103,6 +109,7 @@ flex-flow: column;
   .nav_button_container .active {
     color: #940000;
     text-decoration: underline;
+    -webkit-tap-highlight-color: transparent;
     }
 
 

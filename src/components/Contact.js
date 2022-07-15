@@ -10,7 +10,7 @@ const Contact = props =>{
     <h1 className="contact-entry">keithlavoieVT@gmail.com</h1>
     <h1 className="contact-entry2"><Link
     style={{letterSpacing: '0.5ch', textDecoration: 'none', color:'#fdfdfd'}}
-        to="/RedirectPage"
+        to="/Redirect"
         target="_blank"
         rel="noreferrer">
     <span className="contact-linkedin">Visit my Linked</span>
