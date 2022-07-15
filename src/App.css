@@ -465,7 +465,8 @@ box-sizing: border-box;
   
     }
 } */
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 920px)  {
+
 
 option {
   background-color: #f4f4f4;
@@ -755,7 +756,7 @@ grid-template-rows: [row1]; */
   /* height: 90vh; */
   width: 100vw;
   display: flex;
-  flex-flow: column-reverse;
+  flex-flow: column;
   box-sizing: border-box;
   /* overflow-y: scroll; */
   }
@@ -853,4 +854,235 @@ font-size: 1.6vh;
     align-self: center;
     
   }
+}
+
+@media only screen and (max-height: 420px)  {
+  
+  .site_content {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: grid;
+    grid-template-columns: [first] 15% [second] 85% [third] 0;
+    grid-template-rows: [row1] 100% ;
+    
+  }
+
+  .main_content_mobile {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-column-start: second;
+    grid-column-end: auto;
+    grid-row-start: row1;
+    grid-row-end: span 1;
+    overflow-y: scroll;
+    position: relative;
+    }
+  
+.mobile_portfolio_content {
+  width: 100%;
+  /* overflow-y: scroll; */
+  height: 100vh;
+  /* display: flex;
+  flex-flow: column-reverse;
+  box-sizing: border-box; */
+  display: block;
+position: absolute;
+top: 0;
+}
+
+  .slideshow_container {
+    width: 100%;
+  }
+  
+  .header_container {
+  grid-area: header;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-flow: column;
+  
+  }
+  
+  .keith_logo {
+    width: 90%;
+    height: 30%;
+    background-size: contain;
+    }
+    
+    .nav_buttons {
+    width: 100%;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 8pt;
+    color: #535353;
+    letter-spacing: 0.4ch;
+    text-align: center;
+    transition: 0.6s ease;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    }
+  
+    .nav_container {
+      width: 100%;
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      background: none;
+      border: none;
+      box-sizing: border-box;
+      font-size: 11pt;
+      color: #535353;
+      text-align: center;
+      transition: 0.6s ease;
+      cursor: pointer;
+      text-decoration: none;
+      height: 100%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+      justify-content: space-evenly;
+      align-items: center;  
+      justify-self: center;
+      -webkit-tap-highlight-color: transparent;
+      }
+    
+    .nav_buttons:hover {
+    color: #940000;
+    }
+    
+    .nav_buttons:focus {
+      color: #940000;
+    }
+  
+    .nav_button_container .active {
+      color: #940000;
+      text-decoration: underline;
+      -webkit-tap-highlight-color: transparent;
+      }
+  
+  
+  
+    .nav_buttons .active {
+      color: #940000;
+    }
+  
+  .navigation_logo_container {
+    grid-column-start: first;
+    grid-column-end: span 2;
+    grid-row-start: row1;
+    grid-row-end: row5;
+  height: 100%;
+  width: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-right: 1px solid #acacac4f;
+  }
+
+  .bodystyle {
+    font-size: 2.6vh;
+          
+    }
+
+    .titlestyle {
+      font-size: 2.8vh;
+        
+      }
+      .subtitlestyle {
+      font-size: 2.8vh;
+            
+      }
+
+      .portfolio-dropdown {
+       padding-top: 2%;
+       padding-left: 3%;
+        width: 100%; 
+        box-sizing: border-box;    
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    
+    
+        }
+
+
+        .home_main {
+          
+          margin-top: 0px;
+        }
+        
+        .home_headline {
+          width: 65%;
+                
+        
+        }
+
+        .about_me_container {
+          grid-template-rows: [row1] 100%;
+          grid-template-columns: [first]60% [second]auto;
+          width: 100%;
+          margin-top: 0;
+        }
+
+        .about_me {
+          padding: 0% 0% 0% 5%;
+          box-sizing: border-box;
+          width: 100%;
+          height: 95%;
+          align-self: center;
+          grid-column: first;
+          grid-row-start: row1;
+          grid-row-end: auto 
+        
+        }
+        
+      
+        .about_me_photo {
+          width: 100%;
+          height: auto;
+          background-position: center;
+          grid-column: second;         
+          padding: 20px;
+          border-top: 20px solid #00000000;
+        }
+      
+
+        .contact-main {
+          width: 80%;
+          height: 100vh;
+          display: flex;
+          flex-flow: column;
+          place-content: center;
+          
+        }
+
+        .contact-entry {
+          font-size: 2.4vw;
+        }
+
+        .contact-entry2 {
+          font-size: 2.4vw;
+        }
+
+        .contact-face{
+          width: 15%;
+          height: auto;
+          align-self: center;
+          
+        }
+
+
+
 }

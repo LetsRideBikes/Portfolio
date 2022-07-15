@@ -40,17 +40,6 @@ useEffect(() => {
     
 <div className="mobile_portfolio_content">
         
-
-<div className="mobile_slide_container">
-{navigatorContentVisible && <RMSPortfolioSlides />}
-{colorLineContentVisible && <CLPortfolioSlides />}
-{averViewContentVisible && <AverPortfolioSlides />}
-{eRegistrationContentVisible && <EregPortfolioSlides />}
-{mobileAppContentVisible && <MobilePortfolioSlides />}
-{navigatorMobileContentVisible && <RMSMobilePortfolioSlides />}
-{bublContentVisible && <BublPortfolioSlides />}
-</div>
-
 <div className='portfolio-dropdown'><img src={arrows} className="dropdown-arrow" alt="lilarrow"/>
 <select className='port-drop' id='port-drop' value={project} onChange={handleOnChange}>
 <option value='Navigator'>Navigator RMS</option>
@@ -62,6 +51,18 @@ useEffect(() => {
     <option value='Bubl'>Bubl Soaps</option>
     </select>
     </div>
+    
+<div className="mobile_slide_container">
+{navigatorContentVisible && <RMSPortfolioSlides />}
+{colorLineContentVisible && <CLPortfolioSlides />}
+{averViewContentVisible && <AverPortfolioSlides />}
+{eRegistrationContentVisible && <EregPortfolioSlides />}
+{mobileAppContentVisible && <MobilePortfolioSlides />}
+{navigatorMobileContentVisible && <RMSMobilePortfolioSlides />}
+{bublContentVisible && <BublPortfolioSlides />}
+</div>
+
+
 </div>
        
        
