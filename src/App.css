@@ -865,6 +865,7 @@ font-size: 1.6vh;
     display: grid;
     grid-template-columns: [first] 15% [second] 85% [third] 0;
     grid-template-rows: [row1] 100% ;
+    overflow: scroll;
     
   }
 
