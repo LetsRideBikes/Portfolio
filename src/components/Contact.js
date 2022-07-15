@@ -12,9 +12,9 @@ const Contact = props =>{
     style={{letterSpacing: '0.5ch', textDecoration: 'none', color:'#fdfdfd'}}
         to="/Redirect"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"> <a href="https://www.linkedin.com/in/keith-lavoie-73844a40/" target="_blank" rel="noreferrer">
     <span className="contact-linkedin">Visit my Linked</span>
-    <span className="contact-linkedin2">in</span>
+    <span className="contact-linkedin2">in</span></a>
       </Link>
 </h1></div></div>
 

@@ -25,6 +25,16 @@ li {
   outline: none;
   }
 
+a {
+  text-decoration: none;
+}
+
+
+
+a.contact-linkedin2 {
+  color: white;
+}
+
 .site_content {
 width: 100vw;
 height: 100vh;
@@ -230,7 +240,7 @@ font-weight: 800;
   text-align: left;
   width: 100%;
   height: auto;
-  letter-spacing: 0.2ch;
+  letter-spacing: 0.5ch;
   color: #363636;
   font-weight: 600;
 }
@@ -241,9 +251,15 @@ font-weight: 800;
   height: 60px;
   background-color: #006192;
   border-radius: 15%;
-  letter-spacing: 0.2ch;
-  padding: 0px 1px 0px 4px;
-}
+  letter-spacing: 0.5ch;
+  padding: 0px 0px 0px 8px;
+  color: white;
+  }
+
+  /* a.contact-linkedin2:visited {
+    color: white;
+  } */
+
 
 .portfolio_content {
 width: 100%;
