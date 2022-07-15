@@ -861,6 +861,7 @@ font-size: 1.6vh;
   .site_content {
     width: 100vw;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     position: fixed;
     display: grid;
     grid-template-columns: [first] 15% [second] 85% [third] 0;

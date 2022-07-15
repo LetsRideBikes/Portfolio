@@ -5,9 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 
+let vh = window.innerHeight * 0.01;
 
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 root.render(
   <React.StrictMode>
  <BrowserRouter >
