@@ -1340,16 +1340,21 @@ top: 0;
 
 
         .home_main {
-          
+          height: 100 --vh;
           margin-top: 0px;
+          position: relative;
         }
         
         .home_headline {
-          top: 32%;
+          position: absolute;
+          top: auto;
+          bottom: 20px;
           width: 65%;
           padding: 3%;
-                
-        
+        }
+
+        .text1 {
+          font-size: 14pt;
         }
 
         .about_me_container {
@@ -1460,20 +1465,28 @@ margin-top: 0;
 @media only screen and (max-width: 385px)  {
 
 
+  .home_main {
+    position: relative;
+    
+  }
+
   .home_headline {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
     box-sizing: border-box;
     height: fit-content;
   }
 
 .text1 {
 
-  font-size: 12pt;
+  font-size: 10pt;
 
   }
   
   .text2 {
    
-    font-size:12pt;
+    font-size:10pt;
    
     }
   }
