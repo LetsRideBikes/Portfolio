@@ -6,6 +6,8 @@ const AboutKeith = props =>{
   
     return (
 <div className='about_me_container'>
+
+
     <div className='about_me textbody_container'>
         <h2 className="titlestyle" style={{fontSize: "18pt", marginBottom: "5%"}}>Hello!</h2>
         <h3 className="bodystyle">
@@ -30,10 +32,11 @@ const AboutKeith = props =>{
         Thanks for taking the time to read a little bit about me, and I look forward to finding out how I can help take your company to the next
         level of success!
         </h3>
-</div>
+        <div className="testimonial-button-container"><Link to="Testimonials"><button className="testimonials-button">Read what other people have to say about me...</button></Link></div>
 
-<div className="about_me_photo"style={{ backgroundImage: `url(${photo})`}}></div>
-<div className="testimonial-button-container"><button className="testimonials-button"><Link to="Testimonials">Read what other people have to say about me...</Link></button></div>
+       </div>
+       <div className="about_me_photo"style={{ backgroundImage: `url(${photo})`}}></div>
+
 
 </div>
 
