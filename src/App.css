@@ -917,7 +917,7 @@ z-index: -10;
   }
   .quotes2 {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     right: 2%;
     box-sizing: border-box;
     width: 150px;
