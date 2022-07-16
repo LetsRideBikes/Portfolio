@@ -6,9 +6,10 @@ import man1 from './img/man1.PNG';
 import man2 from './img/man2.PNG';
 import woman1 from './img/woman1.PNG';
 import woman2 from './img/woman2.PNG';
+import {useNavigate} from 'react-router-dom';
 
 const Testimonials = props =>{
-  
+    const navigate = useNavigate();
     return (
 <div className='testimonials-container'><img className="quotes" src={quotes}/><img className="quotes2" src={quotes2}/><div className="testimonial-title"><img className="titleimage" src={titleimg} /></div>
 
@@ -45,6 +46,7 @@ const Testimonials = props =>{
         <div className='testimonial-body-container2'><h3 className='bodystyle modified' style={{fontStyle:"italic"}}>"Keith can really ball. I've personally seen him take down some of the best players in the game right now. I think he's up to almost 175 career triple-doubles. Russel Westbrook better watch his back!"</h3>
         </div>
         </div>
+        <button className="back-button" onClick={() => navigate(-1)}>Go back</button>
 </div>
 
 

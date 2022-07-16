@@ -149,7 +149,7 @@ border-right: 1px solid #acacac4f;
 .home_main {
   width: 100vw;
   height: 100vh;
-  background-position: center ;
+  background-position: contain ;
   position: relative;
 }
 
@@ -729,7 +729,7 @@ position: relative;
   .home_main {
     width: 100vw;
     height: 100vh;
-    background-position:50% ;
+    background-position:35% ;
     display: flex;
     margin-top: -20px;
   }
@@ -827,7 +827,7 @@ position: relative;
   
   
   .about_me {
-    height: 150vh;
+    height: 160vh;
     padding: 5% 5% 0% 5%;
     box-sizing: border-box;
     grid-row-start: second;
@@ -901,7 +901,7 @@ width: auto;
   .testimonials-container {
     height: fit-content;
     padding: 15px;
-    margin-bottom: 450px;
+    margin-bottom: 300px;
     justify-content: center;
   }
   .quotes {
@@ -1011,6 +1011,23 @@ z-index: -10;
     margin-bottom: 0px;
 }
 
+.back-button {
+  width: 100%;
+      min-height: 35px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      background: linear-gradient(to top right, #a85858fd, rgba(146, 30, 30, 0.87));
+      border: 0px solid #535353;
+      border-radius: 15px;
+      box-sizing: border-box;
+      font-size: 10pt;
+      color: #ffffff;
+      letter-spacing: 0.4ch;
+      text-align: center;
+      transition: 0.6s ease;
+      padding: 5px 15px 5px 15px;
+      margin-top: 50px;
+}
 
 
 
@@ -1191,7 +1208,7 @@ justify-self: center;
 }
 
 .project_description_box {
-  height: 100vh;
+  height: 90vh;
   width: 96%;
 
   }

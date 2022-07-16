@@ -1,9 +1,9 @@
-import moss2 from './img/moss2.jpg';
+import coverphoto from './img/bkg/moss2.jpg';
 const Home = props =>{
   
     return (
 <div className="home_main"    style={{ 
-      backgroundImage: `url(${moss2})`, 
+      backgroundImage: `url(${coverphoto})`, 
       backgroundRepeat: 'no-repeat'}}>
 
 
