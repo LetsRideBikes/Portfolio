@@ -4,7 +4,7 @@ import cl1 from './img/cl1.png';
 import cl2 from './img/cl2.png';
 import cl3 from './img/cl3.png';
 import cl4 from './img/cl4.png';
-
+import { useState } from "react";
 
 
 const Slides = [cl1, cl2, cl3, cl4];
@@ -14,6 +14,38 @@ function CLSlideshow() {
 
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
+  const [touchPosition, setTouchPosition] = useState(null)
+  // ...
+  const handleTouchStart = (e) => {
+      const touchDown = e.touches[0].clientX
+      setTouchPosition(touchDown)
+  }
+  
+  const handleTouchMove = (e) => {
+    const touchDown = touchPosition
+  
+    if(touchDown === null) {
+        return
+    }
+  
+    const currentTouch = e.touches[0].clientX
+    const diff = touchDown - currentTouch
+  
+    if (diff > 5) {
+      setIndex((prevIndex) =>
+      prevIndex === Slides.length - 1 ? 0 : prevIndex + 1
+    )
+    }
+  
+    if (diff < -5) {
+      setIndex((prevIndex) =>
+      prevIndex === Slides.length - 1 ? 0 : prevIndex - 1
+    )
+    }
+  
+    setTouchPosition(null)
+  }
+
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
@@ -32,7 +64,7 @@ function CLSlideshow() {
   }, [index]);
 
     return (
-      <div className="slideshow">
+      <div className="slideshow" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         <div className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {Slides.map((imageSource, index) => (

@@ -17,6 +17,7 @@ import rms14 from './img/RMSEngagement.png';
 import rms15 from './img/RMSProfileMain.png';
 import rms16 from './img/RMSRiskMovers.png';
 // import rms17 from './img/RMSOutcomes.png';
+import { useState } from "react";
 
 const Slides = [rms1, rms2, rms3, rms4, rms5, rms6, rms7, rms8, rms9, rms10, rms11, rms13, rms14, rms15, rms16];
 const delay = 15000;
@@ -25,6 +26,37 @@ function RMSSlideshow() {
 console.log(rms1);
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
+  const [touchPosition, setTouchPosition] = useState(null)
+  // ...
+  const handleTouchStart = (e) => {
+      const touchDown = e.touches[0].clientX
+      setTouchPosition(touchDown)
+  }
+  
+  const handleTouchMove = (e) => {
+    const touchDown = touchPosition
+  
+    if(touchDown === null) {
+        return
+    }
+  
+    const currentTouch = e.touches[0].clientX
+    const diff = touchDown - currentTouch
+  
+    if (diff > 5) {
+      setIndex((prevIndex) =>
+      prevIndex === Slides.length - 1 ? 0 : prevIndex + 1
+    )
+    }
+  
+    if (diff < -5) {
+      setIndex((prevIndex) =>
+      prevIndex === Slides.length - 1 ? 0 : prevIndex - 1
+    )
+    }
+  
+    setTouchPosition(null)
+  }
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
@@ -43,7 +75,7 @@ console.log(rms1);
   }, [index]);
 
     return (
-      <div className="slideshow">
+      <div className="slideshow" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         <div className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {Slides.map((imageSource, index) => (
