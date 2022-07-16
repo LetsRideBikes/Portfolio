@@ -30,7 +30,7 @@ function App() {
      <div className="main_content"><Routes>
      <Route path="/*" element={<Home />}/>
       <Route path="Portfolio/*" element={<PortfolioMain />}/>
-      <Route path="About" element={<About />}/>
+      <Route path="About/*" element={<About />}/>
       <Route path="Contact" element={<Contact />}/>
       <Route path="Home" element={<Home />}/>
      </Routes>
@@ -38,7 +38,7 @@ function App() {
      <div className="main_content_mobile"><Routes>
      <Route path="/*" element={<Home />}/>
       <Route path="Portfolio/*" element={<Portfolio />}/>
-      <Route path="About" element={<About />}/>
+      <Route path="About/*" element={<About />}/>
       <Route path="Contact" element={<Contact />}/>
       <Route path="Home" element={<Home />}/>
      </Routes>
