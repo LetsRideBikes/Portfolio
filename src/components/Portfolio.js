@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 const Portfolio = props => {
     
-    const [project, setProject] = useState("NavigatorMobile");
+    const [project, setProject] = useState("Navigator");
     const [navigatorContentVisible, setNavigatorContentVisible] = useState(true);
     const [colorLineContentVisible, setColorLineContentVisible] = useState(false);
     const [averViewContentVisible, setAverViewContentVisible] = useState(false);
