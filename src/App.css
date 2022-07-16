@@ -1013,7 +1013,7 @@ z-index: -10;
 
 .back-button {
   width: 100%;
-      min-height: 35px;
+      height: 55px;
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       background: linear-gradient(to top right, #a85858fd, rgba(146, 30, 30, 0.87));
