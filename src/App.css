@@ -64,8 +64,34 @@ flex-flow: column;
 .keith_logo {
   width: 90%;
   height: 30%;
-  background-size: contain;
+  background-size: contain;-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
   
   .nav_buttons {
   width: 100%;
@@ -83,7 +109,35 @@ flex-flow: column;
   cursor: pointer;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation-delay: 2s;
   }
+  @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 
   .nav_container {
     width: 100%;
@@ -151,6 +205,8 @@ border-right: 1px solid #acacac4f;
   height: 100vh;
   background-position: contain ;
   position: relative;
+  -webkit-animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .home_headline {
@@ -169,6 +225,9 @@ border-right: 1px solid #acacac4f;
   position: absolute; 
   bottom: 2%;
   left: 1%;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation-delay: 2s;
 
 }
 
@@ -203,6 +262,7 @@ font-weight: 800;
   align-self: center;
   
 }
+
 
 .contact-info{
   width: 80vw;
@@ -313,7 +373,36 @@ display: flex;
 flex-flow: column;
 justify-content: space-evenly;
 padding: 2%;
+	-webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .portfolio_navigation {
 box-sizing: border-box;
@@ -361,6 +450,8 @@ color: #940000;
 letter-spacing: 0.2ch;
 margin-bottom: 0;
 margin-top: 0;
+-webkit-animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .subtitlestyle {
 font-family: 'Open Sans', sans-serif;
@@ -369,6 +460,8 @@ font-size: 1.7vh;
 color: #535353;
 letter-spacing: 0.2ch;
 margin-top: 0;
+-webkit-animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .bodystyle {
 font-family: 'Open Sans', sans-serif;
@@ -377,6 +470,8 @@ font-size: 1.6vh;
 color: #535353;
 letter-spacing: 0.2ch;
 margin-top: 5px;
+-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 
@@ -442,7 +537,8 @@ border: 5px solid #00000000;
 background-repeat: no-repeat;
 margin: 0%;
 box-sizing: border-box;
-
+-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 
@@ -462,6 +558,9 @@ box-sizing: border-box;
   justify-content: space-around;
   padding-left: 2%;
   border-left: 1px solid #acacac2a;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 1s;
 }
 
 .portfolio-dropdown {
@@ -501,7 +600,28 @@ box-sizing: border-box;
     transition: 0.6s ease;
     cursor: pointer;
     padding: 0px 15px 0px 15px;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 1.6s;
 }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .testimonials-button:hover {
 background: linear-gradient(to bottom right, #883636, #af4444 );
@@ -627,6 +747,23 @@ margin: 15px;
 align-self: center;
 }
 
+.back-button {
+  width: 100%;
+      height: 55px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      background: linear-gradient(to top right, #a85858fd, rgba(146, 30, 30, 0.87));
+      border: 0px solid #535353;
+      border-radius: 15px;
+      box-sizing: border-box;
+      font-size: 10pt;
+      color: #ffffff;
+      letter-spacing: 0.4ch;
+      text-align: center;
+      transition: 0.6s ease;
+      padding: 5px 15px 5px 15px;
+      margin-top: 50px;
+}
 
 .titlestyle2 {
   font-family: 'Open Sans', sans-serif;
@@ -664,6 +801,49 @@ margin-top: 0;
           width: 350px;
         }
 
+        @-webkit-keyframes slide-in-left {
+          0% {
+            -webkit-transform: translateX(-1000px);
+                    transform: translateX(-1000px);
+            opacity: 0;
+          }
+          100% {
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        @keyframes slide-in-left {
+          0% {
+            -webkit-transform: translateX(-1000px);
+                    transform: translateX(-1000px);
+            opacity: 0;
+          }
+          100% {
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes fade-in {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      
+
 @media only screen and (max-width: 1080px)  {
 
 
@@ -680,6 +860,8 @@ option {
 align-items: center;
 justify-content: center;
 position: relative;
+-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
 
     }
@@ -732,8 +914,27 @@ position: relative;
     background-position:35% ;
     display: flex;
     margin-top: -20px;
+    -webkit-animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
-  
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   .home_headline {
     width: 95%;
     height: fit-content;
@@ -742,10 +943,13 @@ position: relative;
     left: 2%;
     background-color: #d8d8d8bb;
     padding: 5%;
-    
-  
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 2s;
   }
   
+
+
   .text1 {
   color: #813e3e;
   font-size: 14pt;
@@ -1011,23 +1215,7 @@ z-index: -10;
     margin-bottom: 0px;
 }
 
-.back-button {
-  width: 100%;
-      height: 55px;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      background: linear-gradient(to top right, #a85858fd, rgba(146, 30, 30, 0.87));
-      border: 0px solid #535353;
-      border-radius: 15px;
-      box-sizing: border-box;
-      font-size: 10pt;
-      color: #ffffff;
-      letter-spacing: 0.4ch;
-      text-align: center;
-      transition: 0.6s ease;
-      padding: 5px 15px 5px 15px;
-      margin-top: 50px;
-}
+
 
 
 
