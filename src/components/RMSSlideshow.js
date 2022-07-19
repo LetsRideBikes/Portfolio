@@ -5,7 +5,7 @@ import rms2 from './img/RMSDashboard.png';
 import rms3 from './img/RMSReferrals.png';
 import rms4 from './img/RMSClientManagement.png';
 import rms5 from './img/RMSLabInbox.png';
-import rms6 from './img/RMSLabInbox.png';
+// import rms6 from './img/RMSLabInbox.png';
 import rms7 from './img/RMSActivities.png';
 import rms8 from './img/RMSSearch.png';
 import rms9 from './img/RMSProgress.png';
@@ -16,10 +16,10 @@ import rms13 from './img/RMSTreatmentPlan2.png';
 import rms14 from './img/RMSEngagement.png';
 import rms15 from './img/RMSProfileMain.png';
 import rms16 from './img/RMSRiskMovers.png';
-// import rms17 from './img/RMSOutcomes.png';
+import rms17 from './img/RMSOutcomes.png';
 import { useState } from "react";
 
-const Slides = [rms1, rms2, rms3, rms4, rms5, rms6, rms7, rms8, rms9, rms10, rms11, rms13, rms14, rms15, rms16];
+const Slides = [rms1, rms2, rms3, rms4, rms5, rms7, rms8, rms9, rms10, rms11, rms13, rms14, rms15, rms16, rms17];
 const delay = 15000;
 
 function RMSSlideshow() {
