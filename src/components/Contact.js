@@ -1,9 +1,28 @@
 import face from './img/face.png';
 import {Link} from 'react-router-dom';
+import Face from './Face';
+import React, { useState, useEffect } from 'react';
+
 const Contact = props =>{
   
+    
+        
+        const [toggle, setToggle] = useState(false)
+        
+        const handleClick = () => { 
+          
+          setToggle(!toggle);
+          
+        }
+
+
     return (
-<div className="contact-main"><img className="contact-face" src= {face} alt="me :)"/>
+<div className="contact-main">
+<Face 
+      handleClick={handleClick}
+       toggle={toggle}
+        />
+    {/* <img className="contact-face" src= {face} alt="me :)"/> */}
 
 <div className="contact-info">
     <h1 className="contact-entry">802.881.7480</h1>
