@@ -23,12 +23,12 @@ const AboutKeith = props =>{
         <br/><br/> 
         When it comes to design, the principles that I tend to lean on most are those derived from the psychology of human interaction. I believe that the relationship a 
         user has with the product they use must be authentic, empathetic and consistent. Good product design should improve a user's quality of life. Beyond design, I'm most driven when doing
-        good, purposeful work and working with good people. Good work is a humble victory that tends to leads to more good work, and my best work comes when I'm pushing myself and taking risks. 
+        good, purposeful work and working with good people- and my best work comes when I'm pushing myself and taking risks. 
         <br /><br />
-        My personal philosophy is to always try to be surrounded by people smarter than me. The more I learn, the more I discover just how much else there is 
-        to know. When I'm not immersed in a creative project with lofi beats in my headphones, you can find me behind a table saw, mountain bike 
-        handlebars, paddles or ski poles. I love the great outdoors and believe strongly in a duty to protect our environment. I always appreciate the opportunity 
-        to work with brands that share the same values.
+        The more I learn, the more I discover just how much else there is 
+        to know. When I'm not immersed in a creative project, you can find me behind a table saw in the workshop, or behind mountain bike 
+        handlebars, canoe paddles or ski poles. I love the great outdoors and believe strongly in a duty to protect our environment. I always appreciate the opportunity 
+        to work with people who share the same values.
         <br /><br />
         Thanks for taking the time to read a little bit about me, and I look forward to finding out how I can help take your company to the next
         level of success!
