@@ -254,6 +254,7 @@ font-weight: 800;
   display: flex;
   flex-flow: column;
   place-content: center;
+  align-items: center;
 }
 
 .contact-face{
@@ -278,7 +279,7 @@ font-weight: 800;
   font-weight: 600;
   border: 0px solid rgb(77, 77, 77);
   box-sizing: border-box;
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   color: #363636;
   letter-spacing: 0.5ch;
   text-align: center; 
@@ -290,7 +291,7 @@ font-weight: 800;
   font-weight: 600;
   border: 0px solid rgb(104, 46, 46);
   box-sizing: border-box;
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   color: #363636;
   letter-spacing: 0.5ch;
   text-align: center; 
@@ -550,7 +551,7 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 } 
 
 .face {
-  width: 100px;
+  width: 150px;
   justify-content: center;
   padding: 5px;
   box-sizing: border-box;
@@ -714,7 +715,7 @@ animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .testimonials-button {
@@ -731,7 +732,7 @@ animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     color: #535353;
     letter-spacing: 0.4ch;
     text-align: center;
-    transition: 0.6s ease;
+    transition: 1.5s ease;
     cursor: pointer;
     padding: 0px 15px 0px 15px;
     -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -761,6 +762,7 @@ animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 background: linear-gradient(to bottom right, #883636, #af4444 );
 color:white;
 border:1px solid #23232300;
+transition: 1.5s ease;
 }
 
 .testimonials-button:visited {
@@ -882,7 +884,8 @@ align-self: center;
 }
 
 .back-button {
-  width: 100%;
+  width: 20%;
+  align-self: center;
       height: 55px;
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
@@ -894,9 +897,16 @@ align-self: center;
       color: #ffffff;
       letter-spacing: 0.4ch;
       text-align: center;
-      transition: 0.6s ease;
+      transition: 1.5s ease;
       padding: 5px 15px 5px 15px;
       margin-top: 50px;
+}
+
+.back-button:hover {
+    background: linear-gradient(to bottom right, #883636, #af4444 );
+    color:white;
+    border:0px solid #23232300;
+    transition: 1.5s ease;
 }
 
 .titlestyle2 {
@@ -980,6 +990,15 @@ margin-top: 0;
 
 @media only screen and (max-width: 1080px)  {
 
+  .face {
+    width: 100px;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .back-button {
+    width: 60%;}
 
 option {
   background-color: #f4f4f4;
@@ -1166,7 +1185,7 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   
   
   .about_me {
-    height: 160vh;
+    height: 170vh;
     padding: 5% 5% 0% 5%;
     box-sizing: border-box;
     grid-row-start: second;

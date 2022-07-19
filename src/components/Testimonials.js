@@ -46,7 +46,7 @@ const Testimonials = props =>{
         <div className='testimonial-body-container2'><h3 className='bodystyle modified' style={{fontStyle:"italic"}}>"Placeholder testimonial"</h3>
         </div>
         </div>
-        <button className="back-button" onClick={() => navigate(-1)}>Go back</button>
+        <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
 </div>
 
 
