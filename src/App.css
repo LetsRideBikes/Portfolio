@@ -241,14 +241,28 @@ border-right: 1px solid #acacac4f;
 color: #813e3e;
 font-size: 2.4vw;
 font-weight: 800;
+-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+animation-delay: 2.6s;
 }
 
 .text2 {
   color: #333333;
   font-size: 2.4vw;
   font-weight: 800;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation-delay: 3.4s;
   }
 
+  .text3 {
+    color: #813e3e;
+    font-size: 2.4vw;
+    font-weight: 800;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation-delay: 4.2s;
+  }
 
 
 
@@ -380,32 +394,23 @@ display: flex;
 flex-flow: column;
 justify-content: space-evenly;
 padding: 2%;
-	-webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
+-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-@-webkit-keyframes slide-in-right {
+@-webkit-keyframes fade-in {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes slide-in-right {
+@keyframes fade-in {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
     opacity: 1;
   }
 }
@@ -1124,6 +1129,12 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     font-size:14pt;
     font-weight: 800;
     }
+
+    .text3 {
+      color: #813e3e;
+      font-size: 14pt;
+      font-weight: 800;
+      }
   
 
   .contact-main {
