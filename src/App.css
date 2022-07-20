@@ -731,6 +731,7 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   justify-content: center;
   align-items: baseline;
   margin-top: 30px;
+  display: none;
 }
 
 .testimonials-button {
@@ -1233,7 +1234,7 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   .testimonial-button-container {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     margin-bottom: 300px;
     box-sizing: border-box;
     /* position: absolute;
@@ -1866,14 +1867,16 @@ top: 0;
         
   .testimonial-button-container {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     margin-bottom: 50px;
     box-sizing: border-box;
+
    
   }
 
   .testimonials-button {
     font-size: 8pt;
+    
 
 }
 
