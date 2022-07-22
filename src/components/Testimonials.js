@@ -17,8 +17,8 @@ const Testimonials = props =>{
 <div className='testimonial-entry'>
     <img className='testimonial-photo' src={man1}></img>
     <div className='testimonial-text'>
-        <h3 className='titlestyle2'>FIRST LAST</h3><h3 className="subtitlestyle modified2" style={{fontSize: "10pt"}}>Title, Company</h3></div>
-        <div className='testimonial-body-container'><h3 className='bodystyle modified' style={{fontStyle:"italic"}}>"Placeholder testimonial"</h3>
+        <h3 className='titlestyle2'>CHRIS POWELL</h3><h3 className="subtitlestyle modified2" style={{fontSize: "10pt"}}>CEO, THINKMD</h3></div>
+        <div className='testimonial-body-container'><h3 className='bodystyle modified' style={{fontStyle:"italic"}}>"Keith is a passionate and committed colleague.  He has the unique ability to blend vision, market input and current product features into a compelling story.  Visualizing the future in a new market with new products is best served by strong concept visualization and prototyping and this is where Keith has exceptional skills.  Wrapping this with strong product management processes is a winning formula that Keith brings to the table."</h3>
         </div>
         </div>
         <div className='line-spacer'></div>
