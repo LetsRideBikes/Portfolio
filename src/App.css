@@ -1174,8 +1174,7 @@ font-weight: 400;
   .home_main {
     width: 100vw;
     height: 100vh;
-    background-color: #006192;
-    background-position:35% ;
+       background-position:35% ;
     display: flex;
     margin-top: -20px;
     -webkit-animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
