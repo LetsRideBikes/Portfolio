@@ -66,13 +66,33 @@ const testimonials = [
       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
     )
     }
+
+
+
+
+
+
+
   
+    // if (diff < -5) {
+    //   setIdx((prevIndex) =>
+    //   prevIndex === testimonials.length - 1 ? 0 : prevIndex - 1
+    // )
+    // }
+  
+
     if (diff < -5) {
-      setIdx((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex - 1
-    )
-    }
-  
+        setIdx((prevIndex) =>
+        prevIndex === 0 ? 0 : prevIndex - 1
+      )
+      }
+
+
+
+
+
+
+
     setTouchPosition(null)
   }
     
