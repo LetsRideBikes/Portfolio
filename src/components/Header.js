@@ -7,12 +7,12 @@ const Header = props => {
 
     return (
 <div className='header_container'>
-<div className="keith_logo" style={{ backgroundImage: `url(${logo})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center'  }}></div>
+<Link to="Home" className="home-button"><div className="keith_logo" style={{ backgroundImage: `url(${logo})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center'  }} ></div></Link>
      <nav className="nav_container">
      <button className="nav_buttons">
-      <Link to="Home" className="nav_buttons">HOME</Link> </button>
-      <button className="nav_buttons">
       <Link to="Portfolio" className="nav_buttons">PORTFOLIO</Link> </button>
+      <button className="nav_buttons">
+      <Link to="Testimonials" className="nav_buttons">TESTIMONY</Link> </button>
       <button className="nav_buttons">
       <Link to="About" className="nav_buttons">ABOUT</Link> </button>
       <button className="nav_buttons">

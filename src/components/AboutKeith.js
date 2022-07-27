@@ -1,4 +1,4 @@
-import photo from './img/aboutmephoto2.png'
+import photo from './img/aboutmephoto5.png'
 import { Link} from 'react-router-dom';
 
 
@@ -33,7 +33,7 @@ const AboutKeith = props =>{
         Thanks for taking the time to read a little bit about me, and I look forward to finding out how I can help take your company to the next
         level of success!
         </h3>
-        <div className="testimonial-button-container"><Link to="Testimonials"><button className="testimonials-button">Read what other people have to say about me...</button></Link></div>
+        {/* <div className="testimonial-button-container"><Link to="Testimonials"><button className="testimonials-button">Read what other people have to say about me...</button></Link></div> */}
 
        </div>
        <div className="about_me_photo"style={{ backgroundImage: `url(${photo})`}}></div>

@@ -1,56 +1,140 @@
 
-import quotes from './img/quotes.png'
-import quotes2 from './img/quotes2.png'
-import titleimg from './img/titleimg.png'
-import man1 from './img/man1.PNG';
-import man2 from './img/man2.PNG';
-import woman1 from './img/woman1.PNG';
-import woman2 from './img/woman2.PNG';
-import {useNavigate} from 'react-router-dom';
+import coverphoto from './img/bkg/moss2.jpg';
+import nextarrow from './img/rightarrow2.svg';
+import lastarrow from './img/leftarrow2.svg';
+import abstractquote from './img/gradientquote2.svg';
+import quotes from './img/quotes.png';
+import quotes2 from './img/quotes2.png';
+import React, { useState, useEffect } from 'react';
+import ReactCSSTransitionGroup from 'react-transition-group'; 
+
 
 const Testimonials = props =>{
-    const navigate = useNavigate();
+
+
+
+const testimonials = [
+    {
+        name: 'Chris Powell',
+        position: 'CEO, ThinkMD',
+        photo: require('./img/chrisphoto.png'),
+        text:
+            "Keith is a passionate and committed colleague.  He has the unique ability to blend vision, market input and current product features into a compelling story.  Visualizing the future in a new market with new products is best served by strong concept visualization and prototyping and this is where Keith has exceptional skills.  Wrapping this with strong product management processes is a winning formula that Keith brings to the table."
+            
+    },
+    {
+        name: 'Jill Warrington',
+        position: 'Laboratory Director, VT Dept of Health',
+        photo: require('./img/jillphoto.png'),
+        text:
+            'Keith is a passionate and committed colleague. He has the unique ability to blend vision, market input and current product features into a compelling story. Visualizing the future in a new market with new products is best served by strong concept visualization and prototyping and this is where Keith has exceptional skills. Wrapping this with strong product management processes is a winning formula that Keith brings to the table.'
+    },
+    {
+        name: 'Michael Joseph',
+        position: 'President, True Vector',
+        photo: require('./img/mikephoto.png'),
+        text:
+            "Keith is a passionate and committed colleague. He has the unique ability to blend vision, market input and current product features into a compelling story. Visualizing the future in a new market with new products is best served by strong concept visualization and prototyping and this is where Keith has exceptional skills. Wrapping this with strong product management processes is a winning formula that Keith brings to the table."
+    },
+  ];
+  
+  const [idx, setIdx] = useState(0);
+
+    let name = testimonials[idx].name;
+    let position= testimonials[idx].position;
+    let photo= testimonials[idx].photo;
+    let text = testimonials[idx].text;
+    const [touchPosition, setTouchPosition] = useState(null)
+  // ...
+  const handleTouchStart = (e) => {
+      const touchDown = e.touches[0].clientX
+      setTouchPosition(touchDown)
+  }
+  
+  const handleTouchMove = (e) => {
+    const touchDown = touchPosition
+  
+    if(touchDown === null) {
+        return
+    }
+  
+    const currentTouch = e.touches[0].clientX
+    const diff = touchDown - currentTouch
+  
+    if (diff > 5) {
+      setIdx((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    )
+    }
+  
+    if (diff < -5) {
+      setIdx((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex - 1
+    )
+    }
+  
+    setTouchPosition(null)
+  }
+    
+  const rand = Math.random();
+    
+    useEffect(() => {
+
+      const interval = setInterval(
+        () => setIdx(idx => (idx + 1) % testimonials.length), 120000,
+        );
+      return () => {
+        clearInterval(interval);
+   };
+   }, []);
+
+
+
     return (
-<div className='testimonials-container'><img className="quotes" src={quotes}/><img className="quotes2" src={quotes2}/><div className="testimonial-title"><img className="titleimage" src={titleimg} /></div>
-
-
-<div className='testimonial-entry'>
-    <img className='testimonial-photo' src={man1}></img>
+<div className="testimonials_main">
+ <div className="home-testimonial-container" 
+onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}
+ >
+    <img className="quotes" src={quotes}/>
+    <img className="quotes2" src={quotes2}/>
+    <div className='testimonial-entry'>
+    <button className="next-testimonial" onClick={() => {
+            setIdx(idx => (idx + 1) % testimonials.length);
+          }}style={{ 
+            
+            backgroundImage: `url(${nextarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
+             <button className="last-testimonial" onClick={() => {
+            setIdx(idx => (idx - 1) % testimonials.length);
+          }}style={{ 
+            backgroundImage: `url(${lastarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
+    
+    <img className='testimonial-photo'
+     src={photo} key={rand}
+     ></img>
     <div className='testimonial-text'>
-        <h3 className='titlestyle2'>CHRIS POWELL</h3><h3 className="subtitlestyle modified2" style={{fontSize: "10pt"}}>CEO, THINKMD</h3></div>
-        <div className='testimonial-body-container'><h3 className='bodystyle modified' style={{fontStyle:"italic"}}>"Keith is a passionate and committed colleague.  He has the unique ability to blend vision, market input and current product features into a compelling story.  Visualizing the future in a new market with new products is best served by strong concept visualization and prototyping and this is where Keith has exceptional skills.  Wrapping this with strong product management processes is a winning formula that Keith brings to the table."</h3>
+        <h3 className='testimonial-name2' key={rand}>{name}</h3></div>
+        <div className='testimonial-text2'><h3 className='testimonial-title2' key={rand}>{position}</h3></div>
+        
+        <div className='testimonial-body-container'><h3 className='testimonial-body2' key={rand} style={{fontStyle:"italic"}}>{text}</h3>
         </div>
         </div>
-        <div className='line-spacer'></div>
+        <div className="testimonialDots">
+        {testimonials.map((_, index) => (
+          <div key={index} className={`testimonialDot${index === idx ? " active" : ""}`} onClick={() => {
+            setIdx(index);
+          }}></div>
+        ))}
+      </div>
+        </div>
 
-        <div className='testimonial-entry2'>
-    <img className='testimonial-photo2' src={woman1}></img>
-    <div className='testimonial-text2'>
-        <h3 className='titlestyle2'>FIRST LAST</h3><h3 className="subtitlestyle modified2" style={{fontSize: "10pt"}}>Title, Company</h3></div>
-        <div className='testimonial-body-container2'><h3 className='bodystyle modified' style={{fontStyle:"italic"}}>"Placeholder testimonial"</h3>
-        </div>
-        </div>  
-        <div className='line-spacer'></div>
-        <div className='testimonial-entry'>
-    <img className='testimonial-photo' src={man2}></img>
-    <div className='testimonial-text'>
-        <h3 className='titlestyle2'>FIRST LAST</h3><h3 className="subtitlestyle modified2" style={{fontSize: "10pt"}}>Title, Company</h3></div>
-        <div className='testimonial-body-container'><h3 className='bodystyle modified' style={{fontStyle:"italic"}}>"Placeholder testimonial"</h3>
-        </div>
-        </div> 
-        <div className='line-spacer'></div>
-        <div className='testimonial-entry2'>
-    <img className='testimonial-photo2' src={woman2}></img>
-    <div className='testimonial-text2'>
-        <h3 className='titlestyle2'>FIRST LAST</h3><h3 className="subtitlestyle modified2" style={{fontSize: "10pt"}}>Title, Company</h3></div>
-        <div className='testimonial-body-container2'><h3 className='bodystyle modified' style={{fontStyle:"italic"}}>"Placeholder testimonial"</h3>
-        </div>
-        </div>
-        <button className="back-button" onClick={() => navigate(-1)}>Go Back</button>
+       
 </div>
-
-
-
 
 );
 }

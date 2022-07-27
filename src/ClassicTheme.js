@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import Testimonials from './components/Testimonials';
 import Redirect from './Redirect';
 import { Routes, Route} from 'react-router-dom';
 
@@ -32,7 +33,7 @@ function ClassicTheme() {
       <Route path="Portfolio/*" element={<PortfolioMain />}/>
       <Route path="About/*" element={<About />}/>
       <Route path="Contact" element={<Contact />}/>
-      <Route path="Home" element={<Home />}/>
+      <Route path="Testimonials" element={<Testimonials />}/>
      </Routes>
      </div>
      <div className="main_content_mobile"><Routes>
@@ -40,7 +41,7 @@ function ClassicTheme() {
       <Route path="Portfolio/*" element={<Portfolio />}/>
       <Route path="About/*" element={<About />}/>
       <Route path="Contact" element={<Contact />}/>
-      <Route path="Home" element={<Home />}/>
+      <Route path="Testimonials" element={<Testimonials />}/>
      </Routes>
      </div>
     </div>
