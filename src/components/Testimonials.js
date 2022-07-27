@@ -76,7 +76,7 @@ const testimonials = [
     setTouchPosition(null)
   }
     
-  const rand = Math.random();
+//   const rand = Math.random();
     
     useEffect(() => {
 
@@ -115,13 +115,13 @@ onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}
             backgroundSize: '10px'}}></button>
     
     <img className='testimonial-photo'
-     src={photo} key={rand}
+     src={photo} 
      ></img>
     <div className='testimonial-text'>
-        <h3 className='testimonial-name2' key={rand}>{name}</h3></div>
-        <div className='testimonial-text2'><h3 className='testimonial-title2' key={rand}>{position}</h3></div>
+        <h3 className='testimonial-name2' >{name}</h3></div>
+        <div className='testimonial-text2'><h3 className='testimonial-title2' >{position}</h3></div>
         
-        <div className='testimonial-body-container'><h3 className='testimonial-body2' key={rand} style={{fontStyle:"italic"}}>{text}</h3>
+        <div className='testimonial-body-container'><h3 className='testimonial-body2'  style={{fontStyle:"italic"}}>{text}</h3>
         </div>
         </div>
         <div className="testimonialDots">
