@@ -268,10 +268,10 @@ border-right: 1px solid #acacac4f;
 
 .text1 {
   height: 15%;
-color: #252525;
+color: #3f3f3f;
 font-family: 'Open Sans', sans-serif;
 font-size: 2.0vw;
-font-weight: 800;
+font-weight: 600;
 -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 animation-delay: 0.6s;
@@ -282,10 +282,10 @@ margin: 0px;
 
 .text2 {
   height: 15%;
-color: #252525;
+color: #3f3f3f;
 font-family: 'Open Sans', sans-serif;
 font-size: 2.0vw;
-font-weight: 800;
+font-weight: 600;
 -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 animation-delay: 2.6s; 
@@ -296,8 +296,8 @@ margin: 0px;
 .beauty {
   width: 60%;
   height: 15%;
-  -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation-delay: 3.2s;
   padding: 0px;
 margin: 5px 0px 0px 5px;
@@ -385,7 +385,7 @@ margin-top: 20px;
   border: none;
   outline: hidden;
   color: #f5f5f5;
-  width: 25%;
+  width: 35%;
   padding: 2%;
   border-radius: 5px;
   text-align: center;
@@ -887,6 +887,7 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 @-webkit-keyframes color-change-2x {
@@ -1296,9 +1297,101 @@ font-weight: 400;
        background-size: 50%;
     display: flex;
     margin-top: -20px;
+    overflow: hidden;
     -webkit-animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
+
+
+
+  .home_headline {
+    width: 100%;
+    height: 80%;
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(15px);
+   box-sizing: border-box;
+   margin: 0 0 0 0;
+   padding: 25% 5% 50% 5%;
+  }
+  
+
+  .home-testimonial-container {
+  
+    width: 90%;
+    height: 80%;
+    background-color: #ffffff4d;
+    border-radius: 5px;
+   box-sizing: border-box;
+    box-shadow: 5px 5px  10px rgb(0, 0, 0), -5px 5px 10px rgb(0, 0, 0);
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    
+  } 
+
+  .abstract-quote {
+   display: none;
+   }
+
+
+  .text1 {
+  color: #1d1d1d;
+  font-size: 14pt;
+  font-weight: 400;
+  }
+  
+  .text2 {
+    color: #1d1d1d;
+    font-size:14pt;
+    font-weight: 400;
+    }
+
+    .text3 {
+      color: #3f3f3f;
+      width:100%;
+      font-size: 12pt;
+      font-weight: 200;
+      mix-blend-mode: difference;
+      }
+  
+.beauty {
+  width: 60%;
+  align-self: left;
+}
+
+
+.coffee1 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -120%;
+  left: 10%;
+}
+.coffee2 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -120%;
+  left: 20%;
+}
+.coffee3 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -120%;
+  left: 20%;
+}
+
+
+.portfolio-button {
+  width: 40%;
+  padding: 2%;
+  align-self: center;
+position: absolute;
+bottom: 25%;
+}
+
 
   @-webkit-keyframes fade-in {
     0% {
@@ -1316,59 +1409,6 @@ font-weight: 400;
       opacity: 1;
     }
   }
-
-  .home_headline {
-    width: 95%;
-    height: fit-content;
-    position: absolute; 
-    top: 44%;
-    left: 2%;
-    background-color: #d8d8d8bb;
-    padding: 5%;
-  
-    /* -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-delay: 2s; */
-  }
-  
-
-  .home-testimonial-container {
-  
-    width: 90%;
-    height: 60%;
-    background-color: #ffffff4d;
-    border-radius: 5px;
-   box-sizing: border-box;
-    box-shadow: 5px 5px  10px rgb(0, 0, 0), -5px 5px 10px rgb(0, 0, 0);
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    
-  } 
-
-  .abstract-quote {
-   display: none;
-   }
-
-
-  .text1 {
-  color: #813e3e;
-  font-size: 14pt;
-  font-weight: 800;
-  }
-  
-  .text2 {
-    color: #333333;
-    font-size:14pt;
-    font-weight: 800;
-    }
-
-    .text3 {
-      color: #813e3e;
-      font-size: 14pt;
-      font-weight: 800;
-      }
-  
-
 
   .contact-main {
     width: 100vw;
@@ -1847,6 +1887,95 @@ font-size: 1.6vh;
     align-self: center;
     
   }
+
+  .home_headline {
+    width: 100%;
+    height: 80%;
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(15px);
+   box-sizing: border-box;
+   margin: 0 0 0 0;
+   padding: 25% 5% 70% 5%;
+  }
+  
+
+  .home-testimonial-container {
+  
+    width: 90%;
+    height: 60%;
+    background-color: #ffffff4d;
+    border-radius: 5px;
+   box-sizing: border-box;
+    box-shadow: 5px 5px  10px rgb(0, 0, 0), -5px 5px 10px rgb(0, 0, 0);
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    
+  } 
+
+  .abstract-quote {
+   display: none;
+   }
+
+
+  .text1 {
+  color: #1d1d1d;
+  font-size: 14pt;
+  font-weight: 400;
+  }
+  
+  .text2 {
+    color: #1d1d1d;
+    font-size:14pt;
+    font-weight: 400;
+    }
+
+    .text3 {
+      color: #3f3f3f;
+      width:100%;
+      font-size: 12pt;
+      font-weight: 200;
+      mix-blend-mode: difference;
+      }
+  
+.beauty {
+  width: 90%;
+}
+
+
+.coffee1 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -120%;
+  left: 10%;
+}
+.coffee2 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -120%;
+  left: 20%;
+}
+.coffee3 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -120%;
+  left: 20%;
+}
+
+
+.portfolio-button {
+  width: 80%;
+  padding: 3%;
+  align-self: center;
+position: absolute;
+bottom: 25%;
+}
+
+
 }
 
 @media only screen and (max-height: 580px)  {
@@ -2035,17 +2164,82 @@ top: 0;
           position: relative;
         }
         
-        .home_headline {
-          position: absolute;
-          top: auto;
-          bottom: 20px;
-          width: 65%;
-          padding: 3%;
-        }
+   
+  .home_headline {
+    width: 100%;
+    height: 80%;
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(0px);
+   box-sizing: border-box;
+   margin: 0 0 0 0;
+   padding: 10% 25% 5% 5%;
+  }
+  
 
-        .text1 {
-          font-size: 14pt;
-        }
+  .abstract-quote {
+   display: none;
+   }
+
+
+  .text1 {
+  color: #1d1d1d;
+  font-size: 14pt;
+  font-weight: 400;
+  }
+  
+  .text2 {
+    color: #1d1d1d;
+    font-size:14pt;
+    font-weight: 400;
+    }
+
+    .text3 {
+      color: #3f3f3f;
+      width:100%;
+      font-size: 12pt;
+      font-weight: 200;
+      mix-blend-mode: difference;
+      }
+  
+.beauty {
+  width: 60%;
+}
+
+
+.coffee1 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -250%;
+  left: 20%;
+}
+.coffee2 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -250%;
+  left: 20%;
+}
+.coffee3 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -250%;
+  left: 20%;
+}
+
+
+.portfolio-button {
+  width: 40%;
+  padding: 2%;
+  align-self: center;
+position: absolute;
+bottom: -10%;
+left: 6%;
+}
+
 
         .about_me_container {
           grid-template-rows: [row1] 100%;
@@ -2172,30 +2366,82 @@ margin-top: 0;
     
   }
 
+
   .home_headline {
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    box-sizing: border-box;
-    height: fit-content;
+    width: 100%;
+    height: 80%;
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(15px);
+   box-sizing: border-box;
+   margin: 0 0 0 0;
+   padding: 25% 5% 70% 5%;
   }
+  
 
-.text1 {
 
-  font-size: 10pt;
+  .abstract-quote {
+   display: none;
+   }
 
+
+  .text1 {
+  color: #1d1d1d;
+  font-size: 14pt;
+  font-weight: 400;
   }
   
   .text2 {
-   
-    font-size:10pt;
-   
+    color: #1d1d1d;
+    font-size:14pt;
+    font-weight: 400;
     }
+
     .text3 {
-   
-      font-size:10pt;
-     
+      color: #3f3f3f;
+      width:100%;
+      font-size: 12pt;
+      font-weight: 200;
+      mix-blend-mode: difference;
       }
+  
+.beauty {
+  width: 90%;
+}
+
+
+.coffee1 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -160%;
+  left: 10%;
+}
+.coffee2 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -160%;
+  left: 20%;
+}
+.coffee3 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -160%;
+  left: 20%;
+}
+
+
+.portfolio-button {
+  width: 80%;
+  padding: 3%;
+  align-self: center;
+position: absolute;
+bottom: 25%;
+}
+
     
       .about_me_photo {
         width: 100%;
@@ -2319,10 +2565,83 @@ margin-top: 0;
         align-items: center;
       }
 
-      .home_headline {
-        width: 90%;
-        bottom: 5%;
+   
+  .home_headline {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(15px);
+   box-sizing: border-box;
+   margin: 0 0 0 0;
+   padding: 5% 5% 15% 5%;
+  }
+  
+
+  .abstract-quote {
+   display: none;
+   }
+
+
+  .text1 {
+  color: #1d1d1d;
+  font-size: 14pt;
+  font-weight: 400;
+  }
+  
+  .text2 {
+    color: #1d1d1d;
+    font-size:14pt;
+    font-weight: 400;
+    }
+
+    .text3 {
+      color: #3f3f3f;
+      width:100%;
+      font-size: 12pt;
+      font-weight: 200;
+      mix-blend-mode: difference;
+      padding-top: 5%;
+      padding-bottom: 5%;
       }
+  
+.beauty {
+  width: 90%;
+}
+
+
+.coffee1 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -500%;
+  left: 20%;
+}
+.coffee2 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -500%;
+  left: 20%;
+}
+.coffee3 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -500%;
+  left: 20%;
+}
+
+
+.portfolio-button {
+  width: 80%;
+  padding: 3%;
+  align-self: center;
+position: absolute;
+bottom: 0%;
+}
+
 
       .testimonial-photo {
         width: 70px;
