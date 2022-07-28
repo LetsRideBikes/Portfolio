@@ -6,11 +6,10 @@ import abstractquote from './img/gradientquote2.svg';
 import quotes from './img/quotes.png';
 import quotes2 from './img/quotes2.png';
 import React, { useState, useEffect } from 'react';
-import ReactCSSTransitionGroup from 'react-transition-group'; 
+
 
 
 const Testimonials = props =>{
-
 
 
 const testimonials = [
@@ -45,7 +44,8 @@ const testimonials = [
     let photo= testimonials[idx].photo;
     let text = testimonials[idx].text;
     const [touchPosition, setTouchPosition] = useState(null)
-  // ...
+
+
   const handleTouchStart = (e) => {
       const touchDown = e.touches[0].clientX
       setTouchPosition(touchDown)
@@ -66,37 +66,19 @@ const testimonials = [
       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
     )
     }
-
-
-
-
-
-
-
-  
-    // if (diff < -5) {
-    //   setIdx((prevIndex) =>
-    //   prevIndex === testimonials.length - 1 ? 0 : prevIndex - 1
-    // )
-    // }
   
 
     if (diff < -5) {
         setIdx((prevIndex) =>
-        prevIndex === 0 ? 0 : prevIndex - 1
+        prevIndex === 0 ? testimonials.length-1 : prevIndex - 1
       )
       }
-
-
-
-
-
 
 
     setTouchPosition(null)
   }
     
-//   const rand = Math.random();
+  const rand = Math.random();
     
     useEffect(() => {
 
@@ -109,14 +91,15 @@ const testimonials = [
    }, []);
 
 
-
     return (
 <div className="testimonials_main">
+
  <div className="home-testimonial-container" 
 onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}
  >
     <img className="quotes" src={quotes}/>
     <img className="quotes2" src={quotes2}/>
+    
     <div className='testimonial-entry'>
     <button className="next-testimonial" onClick={() => {
             setIdx(idx => (idx + 1) % testimonials.length);
@@ -127,13 +110,15 @@ onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}
             backgroundPosition: 'center',
             backgroundSize: '10px'}}></button>
              <button className="last-testimonial" onClick={() => {
-            setIdx(idx => (idx - 1) % testimonials.length);
+            setIdx(idx === 0 ? testimonials.length-1 : idx => (idx - 1) % testimonials.length);
+
+
           }}style={{ 
             backgroundImage: `url(${lastarrow})`, 
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundSize: '10px'}}></button>
-    
+   
     <img className='testimonial-photo'
      src={photo} 
      ></img>
@@ -143,7 +128,9 @@ onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}
         
         <div className='testimonial-body-container'><h3 className='testimonial-body2'  style={{fontStyle:"italic"}}>{text}</h3>
         </div>
+        
         </div>
+        
         <div className="testimonialDots">
         {testimonials.map((_, index) => (
           <div key={index} className={`testimonialDot${index === idx ? " active" : ""}`} onClick={() => {
