@@ -1,7 +1,7 @@
 
 import coverphoto from './img/bkg/moss2.jpg';
-import nextarrow from './img/rightarrow2.svg';
-import lastarrow from './img/leftarrow2.svg';
+import nextarrow from './img/rightarrow3.svg';
+import lastarrow from './img/leftarrow3.svg';
 import abstractquote from './img/gradientquote2.svg';
 import quotes from './img/quotes.png';
 import quotes2 from './img/quotes2.png';
@@ -27,14 +27,14 @@ const testimonials = [
         position: 'Laboratory Director, VT Dept of Health',
         photo: require('./img/jillphoto.png'),
         text:
-            'Keith is a passionate and committed colleague. He has the unique ability to blend vision, market input and current product features into a compelling story. Visualizing the future in a new market with new products is best served by strong concept visualization and prototyping and this is where Keith has exceptional skills. Wrapping this with strong product management processes is a winning formula that Keith brings to the table.'
+            'Placeholder'
     },
     {
         name: 'Michael Joseph',
         position: 'President, True Vector',
         photo: require('./img/mikephoto.png'),
         text:
-            "Keith is a passionate and committed colleague. He has the unique ability to blend vision, market input and current product features into a compelling story. Visualizing the future in a new market with new products is best served by strong concept visualization and prototyping and this is where Keith has exceptional skills. Wrapping this with strong product management processes is a winning formula that Keith brings to the table."
+            "Placeholder"
     },
   ];
   

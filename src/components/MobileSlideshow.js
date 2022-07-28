@@ -3,6 +3,8 @@ import './Slideshow.css';
 import Glimpse from './img/Glimpse.png';
 import Glimpse2 from './img/Glimpse2.png';
 import { useState } from "react";
+import nextarrow from './img/rightarrow2.svg';
+import lastarrow from './img/leftarrow2.svg';
 
 const Slides = [Glimpse, Glimpse2];
 const delay = 15000;
@@ -62,6 +64,21 @@ function MobileSlideshow() {
 
     return (
       <div className="slideshow" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+          <button className="next-slide" onClick={() => {
+            setIndex(idx => (idx + 1) % Slides.length);
+          }}style={{ 
+            
+            backgroundImage: `url(${nextarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
+             <button className="last-slide" onClick={() => {
+            setIndex(idx => (idx - 1) % Slides.length);
+          }}style={{ 
+            backgroundImage: `url(${lastarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
         <div className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {Slides.map((imageSource, index) => (

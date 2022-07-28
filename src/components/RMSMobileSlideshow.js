@@ -4,7 +4,8 @@ import rmsm1 from './img/RMSMobile1.png';
 import rmsm2 from './img/RMSMobile2.png';
 import rmsm3 from './img/RMSMobile3.png';
 import { useState } from "react";
-
+import nextarrow from './img/rightarrow2.svg';
+import lastarrow from './img/leftarrow2.svg';
 
 
 const Slides = [rmsm1, rmsm2, rmsm3];
@@ -68,6 +69,21 @@ function RMSMobileSlideshow() {
 
     return (
       <div className="slideshow" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+          <button className="next-slide" onClick={() => {
+            setIndex(idx => (idx + 1) % Slides.length);
+          }}style={{ 
+            
+            backgroundImage: `url(${nextarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
+             <button className="last-slide" onClick={() => {
+            setIndex(idx => (idx - 1) % Slides.length);
+          }}style={{ 
+            backgroundImage: `url(${lastarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
         <div className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {Slides.map((imageSource, index) => (

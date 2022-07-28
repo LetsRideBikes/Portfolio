@@ -4,6 +4,7 @@ import bubl from './img/bubl.png';
 import { useState } from "react";
 
 
+
 const Slides = [bubl];
 const delay = 15000;
 
@@ -62,6 +63,7 @@ function BublSlideshow() {
 
     return (
       <div className="slideshow" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+          
         <div className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {Slides.map((imageSource, index) => (

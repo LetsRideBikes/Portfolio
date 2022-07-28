@@ -29,6 +29,35 @@
     
 }
 
+.next-slide {
+  width: 20px;
+  height: 20px;
+position: absolute;
+background: none;
+right: 0;
+bottom: 50%;
+border: none;
+border-radius: 2px;
+cursor: pointer;
+opacity: 70%;
+}
+
+.last-slide {
+  width: 20px;
+  height: 20px;
+position: absolute;
+background: none;
+left: 0;
+bottom: 50%;
+border: none;
+border-radius: 2px;
+cursor: pointer;
+opacity: 70%;
+}
+
+
+
+
 .slideshowDot {
     cursor: pointer;
     height: 15px;

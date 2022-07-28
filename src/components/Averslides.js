@@ -7,6 +7,8 @@ import aver4 from './img/aver4.png';
 import aver5 from './img/aver5.png';
 import aver6 from './img/aver6.png';
 import { useState } from "react";
+import nextarrow from './img/rightarrow2.svg';
+import lastarrow from './img/leftarrow2.svg';
 
 
 const Slides = [aver1, aver2, aver3, aver4, aver5, aver6];
@@ -67,6 +69,21 @@ function Averslides() {
 
     return (
       <div className="slideshow" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+          <button className="next-slide" onClick={() => {
+            setIndex(idx => (idx + 1) % Slides.length);
+          }}style={{ 
+            
+            backgroundImage: `url(${nextarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
+             <button className="last-slide" onClick={() => {
+            setIndex(idx => (idx - 1) % Slides.length);
+          }}style={{ 
+            backgroundImage: `url(${lastarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
         <div className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {Slides.map((imageSource, index) => (

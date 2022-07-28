@@ -17,6 +17,8 @@ import rms14 from './img/RMSEngagement.png';
 import rms15 from './img/RMSProfileMain.png';
 import rms16 from './img/RMSRiskMovers.png';
 import rms17 from './img/RMSOutcomes.png';
+import nextarrow from './img/rightarrow2.svg';
+import lastarrow from './img/leftarrow2.svg';
 import { useState } from "react";
 
 const Slides = [rms1, rms2, rms3, rms4, rms5, rms7, rms8, rms9, rms10, rms11, rms13, rms14, rms15, rms16, rms17];
@@ -76,6 +78,22 @@ console.log(rms1);
 
     return (
       <div className="slideshow" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+            <button className="next-slide" onClick={() => {
+            setIndex(idx => (idx + 1) % Slides.length);
+          }}style={{ 
+            
+            backgroundImage: `url(${nextarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
+             <button className="last-slide" onClick={() => {
+            setIndex(idx => (idx - 1) % Slides.length);
+          }}style={{ 
+            backgroundImage: `url(${lastarrow})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '10px'}}></button>
+        
         <div className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }} >
           {Slides.map((imageSource, index) => (
