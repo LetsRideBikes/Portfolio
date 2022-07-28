@@ -21,13 +21,13 @@ const testimonials = [
             "Keith is a passionate and committed colleague.  He has the unique ability to blend vision, market input and current product features into a compelling story.  Visualizing the future in a new market with new products is best served by strong concept visualization and prototyping and this is where Keith has exceptional skills.  Wrapping this with strong product management processes is a winning formula that Keith brings to the table."
             
     },
-    // {
-    //     name: 'Jill Warrington',
-    //     position: 'Laboratory Director, VT Dept of Health',
-    //     photo: require('./img/jillphoto.png'),
-    //     text:
-    //         'Placeholder'
-    // },
+    {
+        name: 'Jill Warrington',
+        position: 'Laboratory Director, VT Dept of Health',
+        photo: require('./img/jillphoto.png'),
+        text:
+            "I've had the distinct pleasure of collaborating with Keith for over 10 years. Keith has demonstrated an exceptional aptitude for successfully managing any challenge or opportunity thrown his way. He demonstrates a wide breadth of expertise, spanning scientific pursuits to product design, project management and innovation. His professionalism, commitment and passion will propel any project forward." 
+    },
     // {
     //     name: 'Michael Joseph',
     //     position: 'President, True Vector',
