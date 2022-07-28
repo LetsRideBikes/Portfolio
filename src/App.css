@@ -1079,7 +1079,13 @@ margin-top: 0;
         }
      
 
-
+        .animate {
+          transition: transform .35s ease-in-out;
+        }
+        
+        .animate.grow {
+          transform: scale(1.5);
+        }
 
 
 
