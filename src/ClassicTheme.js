@@ -9,6 +9,9 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import Testimonials from './components/Testimonials';
 import Redirect from './Redirect';
+import coffee1 from './components/img/coffee1.svg';
+import coffee2 from './components/img/coffee2.svg';
+import coffee3 from './components/img/coffee3.svg';
 import { Routes, Route} from 'react-router-dom';
 
 
@@ -18,12 +21,16 @@ function ClassicTheme() {
   
   return (
 <div className="app-container">
+
     <div 
     className="site_content" 
     style={{ 
       backgroundImage: `url(${background})`,
       backgroundSize:"cover", 
       backgroundRepeat: 'no-repeat'}}>
+        <img className="coffee2" src={coffee2}/>
+        <img className="coffee3" src={coffee3}/>
+        <img className="coffee1" src={coffee1}/>
         <Routes>
 <Route path='/Redirect' element={<Redirect />} />
 </Routes>

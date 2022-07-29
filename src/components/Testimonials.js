@@ -5,9 +5,6 @@ import lastarrow from './img/leftarrow3.svg';
 import abstractquote from './img/gradientquote2.svg';
 import quotes from './img/quotes.png';
 import quotes2 from './img/quotes2.png';
-import coffee1 from './img/coffee1.svg';
-import coffee2 from './img/coffee2.svg';
-import coffee3 from './img/coffee3.svg';
 import React, { useState, useEffect } from 'react';
 
 
@@ -96,9 +93,6 @@ const testimonials = [
 
     return (
 <div className="testimonials_main">
-<img className="coffee1" src={coffee1}/>
-        <img className="coffee2" src={coffee2}/>
-        <img className="coffee3" src={coffee3}/>
  <div className="home-testimonial-container" 
 onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}
  >
