@@ -397,13 +397,13 @@ margin-top: 20px;
 
 
 .lilsat {
-  width: 60px;
+  width: 40px;
   opacity: 50%;
   position: absolute;
   top: 40%;
   left: 150%;
   animation: shootsat 10s;
-  animation-delay: 60s;
+  animation-delay: 90s;
 }
 @keyframes shootsat
 {
