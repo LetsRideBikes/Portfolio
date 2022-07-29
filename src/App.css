@@ -1369,8 +1369,9 @@ font-weight: 400;
 
     .text3 {
       color: #3f3f3f;
+      padding-top: 0;
       width:100%;
-      font-size: 12pt;
+      font-size: 10pt;
       font-weight: 200;
       mix-blend-mode: difference;
       }
@@ -1958,7 +1959,7 @@ font-size: 1.6vh;
     .text3 {
       color: #3f3f3f;
       width:100%;
-      font-size: 12pt;
+      font-size: 10pt;
       font-weight: 200;
       mix-blend-mode: difference;
       }
@@ -2222,7 +2223,7 @@ top: 0;
     .text3 {
       color: #3f3f3f;
       width:100%;
-      font-size: 12pt;
+      font-size: 10pt;
       font-weight: 200;
       mix-blend-mode: difference;
       }
@@ -2425,7 +2426,7 @@ margin-top: 0;
     .text3 {
       color: #3f3f3f;
       width:100%;
-      font-size: 12pt;
+      font-size: 10pt;
       font-weight: 200;
       mix-blend-mode: difference;
       }
@@ -2623,7 +2624,7 @@ bottom: 25%;
     .text3 {
       color: #3f3f3f;
       width:100%;
-      font-size: 12pt;
+      font-size: 10pt;
       font-weight: 200;
       mix-blend-mode: difference;
       padding-top: 5%;
