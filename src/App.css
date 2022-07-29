@@ -395,6 +395,7 @@ margin-top: 20px;
   font-size: 10pt;
   letter-spacing: 0.1ch;
   font-weight: 200;
+  /* background: linear-gradient(to bottom right, #535353, #2c2c2c); */
   background: linear-gradient(to bottom right, #940000, #a00539);
   border: none;
   outline: hidden;
@@ -416,6 +417,7 @@ margin-top: 20px;
   border-radius: 5px;
 }
 
+
 .portfolio-button::before {
   transform: scaleX(0);
   transform-origin: bottom right;
@@ -424,6 +426,7 @@ margin-top: 20px;
 .portfolio-button:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
+  
 }
 
 .portfolio-button::before {
@@ -436,8 +439,80 @@ margin-top: 20px;
   z-index: -1;
   transition: transform .6s ease;
   border-radius: 5px;
-}
+  
+          } 
 
+
+
+ .portfolio-button:hover {
+  color: #FFFFFF;
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ }         
+
+          @-webkit-keyframes shadow-drop-center {
+            0% {
+              -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+            100% {
+              -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            }
+          }
+          @keyframes shadow-drop-center {
+            0% {
+              -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+            100% {
+              -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            }
+          }
+          
+
+/*
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #bd2020;
+  }
+  20% {
+    background: #c52d46;
+  }
+  40% {
+    background: #ad193e;
+  }
+  60% {
+    background: #8d1a1a;
+  }
+  80% {
+    background: #b60707;
+  }
+  100% {
+    background: #b1305b;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #bd2020;
+  }
+  20% {
+    background: #c52d46;
+  }
+  40% {
+    background: #ad193e;
+  }
+  60% {
+    background: #8d1a1a;
+  }
+  80% {
+    background: #b60707;
+  }
+  100% {
+    background: #b1305b;
+  }
+} */
 
 .lilsat {
   width: 40px;

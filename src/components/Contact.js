@@ -1,4 +1,4 @@
-import face from './img/face.png';
+
 import {Link} from 'react-router-dom';
 // import Resume from './docs/KeithLavoie_Resume2022.pdf'
 import Face from './Face';
