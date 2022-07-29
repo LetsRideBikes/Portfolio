@@ -1,4 +1,4 @@
-import coverphoto from './img/bkg/fibonnaci3.svg';
+import coverphoto from './img/bkg/fibonnaci4.svg';
 import beauty from './img/beauty2.svg';
 import lilsat from './img/lilsat.svg';
 import { Link} from 'react-router-dom';

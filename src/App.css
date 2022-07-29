@@ -403,7 +403,7 @@ margin-top: 20px;
   top: 40%;
   left: 150%;
   animation: shootsat 10s;
-  animation-delay: 30s;
+  animation-delay: 60s;
 }
 @keyframes shootsat
 {
