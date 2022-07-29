@@ -1204,7 +1204,6 @@ margin-top: 0;
         }
 
 
-
 @media only screen and (max-width: 1080px)  {
 
   .next-testimonial{
@@ -1327,14 +1326,14 @@ font-weight: 400;
 
   .home_headline {
     width: 100%;
-    height: 80%;
+    height: 70%;
     position: absolute; 
     top: 0%;
     left: 0%;
     backdrop-filter: blur(15px);
    box-sizing: border-box;
    margin: 0 0 0 0;
-   padding: 25% 5% 50% 5%;
+   padding: 15% 5% 15% 5%;
   }
   
 
@@ -1377,8 +1376,9 @@ font-weight: 400;
       }
   
 .beauty {
-  width: 60%;
+  width: 400px;
   align-self: left;
+  margin-left: 0;
 }
 
 
@@ -1406,11 +1406,12 @@ font-weight: 400;
 
 
 .portfolio-button {
-  width: 40%;
+  width: 280px;
   padding: 2%;
-  align-self: center;
+  transform: translate(-50% -50%);
 position: absolute;
-bottom: 25%;
+bottom: 5%;
+left: 5%;
 }
 
 
@@ -1920,6 +1921,7 @@ font-size: 1.6vh;
    box-sizing: border-box;
    margin: 0 0 0 0;
    padding: 25% 5% 70% 5%;
+   display: flex;
   }
   
 
@@ -1962,7 +1964,7 @@ font-size: 1.6vh;
       }
   
 .beauty {
-  width: 90%;
+  width: 260px;
 }
 
 
@@ -1990,7 +1992,7 @@ font-size: 1.6vh;
 
 
 .portfolio-button {
-  width: 80%;
+  width: 88%;
   padding: 3%;
   align-self: center;
 position: absolute;
@@ -2181,7 +2183,7 @@ top: 0;
 
 
         .home_main {
-          height: 100 --vh;
+          height: calc(var(--vh, 1vh) * 100);;
           margin-top: 0px;
           position: relative;
         }
@@ -2457,7 +2459,7 @@ margin-top: 0;
 
 
 .portfolio-button {
-  width: 80%;
+  width: 88%;
   padding: 3%;
   align-self: center;
 position: absolute;
@@ -2480,7 +2482,7 @@ bottom: 25%;
 
     display: grid;
     grid-template-columns: [first] 100% [second] auto;
-    grid-template-rows: [row1] 20% [row2] auto ;
+    grid-template-rows: [row1] 20% [row2] 80% ;
     grid-template-areas: "header"
                         "body"
                         "body";
@@ -2694,7 +2696,20 @@ align-items: center;
        margin-top: 5%;
      
       }
+.testimonials_main {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+      .home-testimonial-container {
+  
+    
+        margin-bottom: 0%;
+      } 
       
+      .main_content {
+        height: 100%;
+      }
       
       .about_me {
         height: 190vh;
