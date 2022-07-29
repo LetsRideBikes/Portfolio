@@ -1,5 +1,6 @@
 import face from './img/face.png';
 import {Link} from 'react-router-dom';
+// import Resume from './docs/KeithLavoie_Resume2022.pdf'
 import Face from './Face';
 import React, { useState, useEffect } from 'react';
 
@@ -35,7 +36,8 @@ const Contact = props =>{
     <span className="contact-linkedin">Visit my Linked</span>
     <span className="contact-linkedin2">in</span></a>
       </Link>
-</h1></div></div>
+      
+</h1><a className="download-resume" href="/docs/KeithLavoie_Resume2022.pdf" download>Download My Resume</a></div></div>
 
 
 
