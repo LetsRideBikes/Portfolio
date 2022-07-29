@@ -78,13 +78,13 @@ function BublSlideshow() {
 
 
 
-        <div className="slideshowDots">
+        {/* <div className="slideshowDots">
         {Slides.map((_, idx) => (
           <div key={idx} className={`slideshowDot${index === idx ? " active" : ""}`} onClick={() => {
             setIndex(idx);
           }}></div>
         ))}
-      </div>
+      </div> */}
 
 
 

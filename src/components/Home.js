@@ -17,7 +17,7 @@ const Home = props =>{
           <h1 className="text2">I'm Keith Lavoie, and I love to create</h1>
           <img className="beauty" src={beauty}/> 
           <h1 className="text3">I have what it takes to bring your ideas to life. <br/>Take a look at my work and read what people say about me.</h1>
-          <button className="portfolio-button"><Link to="Portfolio" >CHECK OUT MY PORTFOLIO</Link></button>
+          <div className="portfolio-button-container"><Link to="Portfolio" ><button className="portfolio-button">CHECK OUT MY PORTFOLIO</button></Link></div>
           </div>
           
 </div>

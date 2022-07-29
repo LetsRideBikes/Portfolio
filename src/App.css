@@ -175,6 +175,7 @@ height: 160px;
   
   .nav_buttons:hover {
   color: #940000;
+
   }
   
   .nav_buttons:focus {
@@ -391,9 +392,38 @@ margin-top: 20px;
   border-radius: 5px;
   text-align: center;
   justify-content: center;
+ cursor: pointer;
+ position: relative;
+ z-index: 2;
+}
+
+.portfolio-button-container {
   -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation-delay: 8.6s;
+  animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 8.6s;
+  border-radius: 5px;
+}
+
+.portfolio-button::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.portfolio-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.portfolio-button::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: linear-gradient(to bottom right, #d31212, #b1305b);
+  z-index: -1;
+  transition: transform .6s ease;
+  border-radius: 5px;
 }
 
 
@@ -670,11 +700,33 @@ background: none;
   }
 .port_nav_link:focus {
 color: #940000;
+-webkit-animation: text-shadow-drop-center 0.6s both;
+	        animation: text-shadow-drop-center 0.6s both;
 }
 
 .port_nav_link:hover {
 color: #940000;
+-webkit-animation: text-shadow-drop-center 0.6s both;
+	        animation: text-shadow-drop-center 0.6s both;
 }
+
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
 
 
 .about_me_container {
@@ -912,20 +964,44 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   overflow: hidden;
 }
 
-@-webkit-keyframes color-change-2x {
+@-webkit-keyframes color-change-3x {
   0% {
-    background: #19dcea;
+    background: #b40303;
+  }
+  20% {
+    background: #cf1111;
+  }
+  40% {
+    background: #9c1616;
+  }
+  60% {
+    background: #9e1414;
+  }
+  80% {
+    background: #b82525;
   }
   100% {
-    background: #b22cff;
+    background: #940c0c;
   }
 }
-@keyframes color-change-2x {
+@keyframes color-change-3x {
   0% {
-    background: #19dcea;
+    background: #b40303;
+  }
+  20% {
+    background: #cf1111;
+  }
+  40% {
+    background: #9c1616;
+  }
+  60% {
+    background: #9e1414;
+  }
+  80% {
+    background: #b82525;
   }
   100% {
-    background: #b22cff;
+    background: #940c0c;
   }
 }
 
