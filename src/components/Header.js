@@ -18,6 +18,8 @@ const Header = props => {
       <button className="nav_buttons">
       <Link to="Contact" >CONTACT</Link> </button> 
         </nav>
+
+        <h3 className="fine-print">Copyright Keith Lavoie 2022<br/>I built this website with React 18!</h3>
      </div>);
     }
     
