@@ -421,11 +421,13 @@ margin-top: 20px;
 .portfolio-button::before {
   transform: scaleX(0);
   transform-origin: bottom right;
+  border-radius: 5px;
 }
 
 .portfolio-button:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
+  border-radius: 5px;
   
 }
 
@@ -445,9 +447,11 @@ margin-top: 20px;
 
 
  .portfolio-button:hover {
+  border-radius: 5px;
   color: #FFFFFF;
-  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  /* -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: shadow-drop-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  transition: transform 2s ease;
  }         
 
           @-webkit-keyframes shadow-drop-center {
@@ -468,7 +472,7 @@ margin-top: 20px;
             100% {
               -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
                       box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-            }
+            } */
           }
           
 
