@@ -43,14 +43,13 @@ const PortfolioMain = props => {
       <button  className="port_nav_button">
       <Link to="NavigatorMobile" className="port_nav_link">NAVIGATOR MOBILE APP</Link> </button>
       <button  className="port_nav_button">
-      <Link to="ColorLine" className="port_nav_link">COLOR LINE LAB ORDERS & RANDOMIZATION</Link> </button>
-      <button  className="port_nav_button">
       <Link to="Averview" className="port_nav_link">AVERVIEW TELEHEALTH PLATFORM</Link> </button>
       <button  className="port_nav_button">
       <Link to="ERegistration" className="port_nav_link">PATIENT REGISTRATION AND INTAKE FORMS</Link> </button>
       <button  className="port_nav_button">
+      <Link to="ColorLine" className="port_nav_link">COLOR LINE LAB ORDERS & RANDOMIZATION</Link> </button>
+      <button  className="port_nav_button">
       <Link to="MobileApp" className="port_nav_link">MOBILE PATIENT ENGAGEMENT & SMS ENROLLMENT</Link> </button> 
-      
         <button  className="port_nav_button">
       <Link to="Bubl" className="port_nav_link">BUBL SOAP SHOP</Link> </button> 
       </nav>

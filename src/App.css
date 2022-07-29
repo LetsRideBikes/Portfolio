@@ -1933,7 +1933,7 @@ font-size: 1.6vh;
     box-shadow: 5px 5px  10px rgb(0, 0, 0), -5px 5px 10px rgb(0, 0, 0);
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    
+    margin-bottom: 35%;
   } 
 
   .abstract-quote {
