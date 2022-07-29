@@ -216,6 +216,7 @@ border-right: 1px solid #acacac4f;
   background-position:center center ;
   background-size: 120%;
   position: relative;
+  overflow: hidden;
   /* display: flex;
   justify-content: center;
   align-items: center; */
