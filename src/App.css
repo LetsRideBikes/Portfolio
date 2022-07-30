@@ -2804,7 +2804,7 @@ margin-top: 0;
         .contact-main {
           width: 85vw;
           height: 100vh;
-          height: calc(var(--vh, 1vh) * 100);
+          /* height: calc(var(--vh, 1vh) * 100); */
           display: flex;
           flex-flow: row-reverse;
           place-content: center;
@@ -3200,7 +3200,7 @@ align-items: center;
       .contact-main {
         width: 100vw;
         height: 80vh;
-        height: calc(var(--vh, 1vh) * 80);
+        /* height: calc(var(--vh, 1vh) * 80); */
         display: flex;
         flex-flow: column-reverse;
         place-content: center;
