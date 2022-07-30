@@ -540,17 +540,19 @@ margin-top: 20px;
 }
 .contact-main {
   width:85vw;
-  height: 100vh;
+  
   display: flex;
   flex-flow: column;
-  place-content: center;
-  align-items: center;
+justify-content: space-between;
+  align-items: left;
+  padding: 6%;
+  -webkit-animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .contact-face{
   width: 15%;
   height: auto;
-  align-self: center;
   
 }
 
@@ -569,10 +571,11 @@ margin-top: 20px;
   font-weight: 600;
   border: 0px solid rgb(77, 77, 77);
   box-sizing: border-box;
-  font-size: 1.4vw;
+  font-size: 1vw;
   color: #363636;
   letter-spacing: 0.5ch;
-  text-align: center; 
+  margin: 1%;
+  /* text-align: center;  */
   justify-content: center;
 }
 .contact-entry2{
@@ -581,10 +584,11 @@ margin-top: 20px;
   font-weight: 600;
   border: 0px solid rgb(104, 46, 46);
   box-sizing: border-box;
-  font-size: 1.4vw;
+  font-size: 1vw;
   color: #363636;
   letter-spacing: 0.5ch;
-  text-align: center; 
+  margin: 1%;
+  /* text-align: center;  */
   justify-content: center;
 }
 
@@ -593,8 +597,10 @@ margin-top: 20px;
   width: 100%;
   height: auto;
   letter-spacing: 0.5ch;
-  color: #363636;
+  color: #181757;
   font-weight: 600;
+  /* text-decoration: underline; */
+  
 }
 .contact-linkedin2{
   font-weight: 600;
@@ -614,26 +620,40 @@ margin-top: 20px;
 
 
 .download-resume {
-  margin-top: 25px;
+ height: 30px;
+justify-content: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 10pt;
-  letter-spacing: 0.1ch;
-  font-weight: 200;
-  background: linear-gradient(to bottom right, #940000, #a00539);
+  letter-spacing: 0.5ch;
+  font-size: 1vw;
+  /* text-decoration: underline; */
+  margin: 1%;
+  font-weight: 600;
+  /* background: linear-gradient(to bottom right, #940000, #a00539); */
   border: none;
   outline: hidden;
-  color: #f5f5f5;
-margin-bottom: 5%;
-  padding: 1%;
+  color: #181757;
+/* margin-bottom: 5%;
+  padding: 1%; */
   border-radius: 5px;
-  text-align: center;
-align-self: center;
+  text-align: left;
+align-self: left;
  cursor: pointer;
  position: relative;
  z-index: 2;
 }
 
-.download-resume::before {
+.contact-linkedin:hover {
+  color: rgb(47, 47, 177);
+  transition: .6s ease;
+  }
+
+.download-resume:hover {
+color: rgb(47, 47, 177);
+transition: .6s ease;
+}
+
+
+/* .download-resume::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
@@ -649,12 +669,165 @@ align-self: center;
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
+  background: linear-gradient(to bottom right, #f3f3f354, #97979775);
+  z-index: -1;
+  transition: transform .6s ease;
+
+} */
+
+
+.message-me-container {
+  width: 80vw;
+  height:40%;
+  background: none;
+  /* position: absolute; 
+  left: 0;
+  z-index: 50; */
+  /* display: flex; */
+ padding: 0;
+ margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageme-form{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  width: 40%;
+  height: auto;
+  display: grid;
+  grid-template-columns: [mcol1] 50% [mcol2] 50%;
+  grid-template-rows: [mrow1] auto [mrow2] 55% [mrow3] auto;
+  grid-template-areas: "body body"
+                       "top1 top2"
+                       "submit submit";
+}
+
+.messageme-container{
+  /* width: 90%;
+  height: 90%; */
+  
+}
+
+.namebox {
+grid-area: top1;
+width: 100%;
+place-self: center;
+text-align: left;
+
+}
+
+.mailbox {
+  grid-area: top2;
+  width: 100%;
+  place-self: center;
+
+}
+
+.bodybox {
+  grid-area: body;
+  width: 100%;
+  height: 70%;
+}
+
+
+/* .messageme-label{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  width: 90%;
+} */
+
+.messageme-input{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  width: 95%;
+  border: none;
+  color: rgb(48, 48, 48);
+  height: 35px;
+  padding: 5px;
+margin-top: 5px;
+  box-sizing: border-box;
+  background: none;
+  border-bottom: 1px solid rgb(119, 119, 119);
+}
+
+.messageme-body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  border: none;
+    height: 80px;
+    padding: 5px;
+  width: 96%;
+  background: none;
+  /* margin-top: 5%; */
+  border-bottom: 1px solid rgb(119, 119, 119);
+}
+.messageme-body:hover{
+
+}
+
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  font-weight: 200;
+  color: rgb(107, 107, 107);
+  opacity: 1; 
+}
+
+.messageme-button{
+  width: 40%;
+  place-self: start;
+  border: none;
+  border-radius: 5px;
+  grid-area: submit;
+height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    letter-spacing: 0.1ch;
+    font-weight: 200;
+    background: linear-gradient(to bottom right, #940000, #a00539);
+    border: none;
+    outline: hidden;
+    color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+  align-self: center;
+   cursor: pointer;
+   position: relative;
+   z-index: 2;
+}
+
+.messageme-button:disabled {
+color: rgb(180, 180, 180);
+background: linear-gradient(to bottom right, #535353, #535353);
+}
+.messageme-button:disabled::before {
+  color: rgb(180, 180, 180);
+  background: linear-gradient(to bottom right, #535353, #535353);
+  }
+
+.messageme-button::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.messageme-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.messageme-button::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
   background: linear-gradient(to bottom right, #d31212, #b1305b);
   z-index: -1;
   transition: transform .6s ease;
   border-radius: 5px;
 }
-
 
 
 .portfolio_content {
@@ -900,10 +1073,11 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 } 
 
 .face {
-  width: 150px;
+  width: 75px;
   justify-content: center;
   padding: 5px;
   box-sizing: border-box;
+  margin-left: 30px;
 }
 
 .face[animation="0"] {
@@ -1441,10 +1615,7 @@ margin-top: 0;
 
 
   .face {
-    width: 80px;
-    justify-content: center;
-    padding: 5px;
-    box-sizing: border-box;
+    display: none;
   }
 
   .back-button {
@@ -1652,11 +1823,16 @@ left: 5%;
   .contact-main {
     width: 100vw;
     height: 70vh;
-    display: flex;
-    flex-flow: column;
-    place-content: center;
+    display: grid;
+    grid-template-columns: [xcol1] 100%;
+    grid-template-rows: [xrow1] 70% [xrow2] 30%;
+    grid-template-areas: "messageme"
+                         "contactinfo"
+                        ;
+    place-content: start;
     align-items: center;
-    
+    overflow: hidden;
+    padding: 0;
   }
   
   .contact-face{
@@ -1664,7 +1840,7 @@ left: 5%;
     height: auto;
     align-self: center;
     margin-bottom: 20px;
-    
+    grid-area: face;
   }
   
   .contact-info{
@@ -1673,6 +1849,7 @@ left: 5%;
     flex-flow: column;
     align-self: center;
     font-family: 'Open Sans', sans-serif;
+    grid-area: contactinfo;
   }
   
   .contact-entry{
@@ -1681,7 +1858,7 @@ left: 5%;
     font-weight: 600;
     border: 0px solid rgb(77, 77, 77);
     box-sizing: border-box;
-    font-size: 4.2vw;
+    font-size: 12px;
     color: #363636;
     letter-spacing: 0.5ch;
     text-align: center; 
@@ -1694,12 +1871,78 @@ left: 5%;
     font-weight: 600;
     border: 0px solid rgb(104, 46, 46);
     box-sizing: border-box;
-    font-size: 4.2vw;
+    font-size: 12px;
     color: #363636;
     letter-spacing: 0.5ch;
     text-align: center; 
     justify-content: center;
   }
+
+  .download-resume {
+    font-size: 12px;
+    text-align: center; 
+  }
+
+  .message-me-container {
+    width: 100%;
+    height:40%;
+    background: none;
+    /* position: absolute; 
+    left: 0;
+    z-index: 50; */
+    /* display: flex; */
+   padding: 0;
+   margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .messageme-form{
+    display: flex;
+    justify-content: space-between;
+    place-content: center;
+padding: 15px;
+box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: [mcol1] 50% [mcol2] 50%;
+    grid-template-rows: [mrow1] auto [mrow2] 55% [mrow3] auto;
+    grid-template-areas: "body body"
+                         "top1 top2"
+                         "submit submit";
+  }
+  
+
+  
+  .messageme-button{
+    width: 50%;
+    place-self: center;
+        
+  }
+  
+  .messageme-button::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .messageme-button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .messageme-button::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: linear-gradient(to bottom right, #d31212, #b1305b);
+    z-index: -1;
+    transition: transform .6s ease;
+    border-radius: 5px;
+  }
+  
 
   .about-me-routes {
     width: 100vw;
@@ -2561,30 +2804,32 @@ margin-top: 0;
         .contact-main {
           width: 85vw;
           height: 100vh;
+          height: calc(var(--vh, 1vh) * 100);
           display: flex;
-          flex-flow: column;
+          flex-flow: row-reverse;
           place-content: center;
           
         }
 
+        .messageme-form  {
+          width: 100%;
+          padding-right: 3%;
+        }
+
         .contact-info {
-          width: 85vw;
+          width: 100%;
+          text-align: right;
         }
 
         .contact-entry {
-          font-size: 2.4vw;
+          font-size: 12px;
         }
 
         .contact-entry2 {
-          font-size: 2.4vw;
+          font-size: 12px;
         }
 
-        .contact-face{
-          width: 15%;
-          height: auto;
-          align-self: center;
-          
-        }
+   
 
         .testimonial-title {
           display: flex;
@@ -2954,20 +3199,35 @@ align-items: center;
       }
       .contact-main {
         width: 100vw;
-        height: 60vh;
+        height: 80vh;
+        height: calc(var(--vh, 1vh) * 80);
         display: flex;
-        flex-flow: column;
+        flex-flow: column-reverse;
         place-content: center;
         
       }
 
       .contact-entry{
-        font-size: 4.4vw;}
+        font-size: 10px;}
 
 
         .contact-linkedin{
-          font-size: 4.4vw;}
+          font-size: 10px;}
 
           .contact-linkedin2{
-            font-size: 4.4vw;}
+            font-size: 10px;}
+
+            .download-resume {
+              font-size: 10px;
+            }
+
+.messageme-form {}
+
+.messageme-body{
+  height: 20px;
+}
+
+
       }
+
+  
