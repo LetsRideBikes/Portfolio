@@ -1822,7 +1822,7 @@ left: 5%;
 
   .contact-main {
     width: 100vw;
-    height: 70vh;
+    height: 70%;
     display: grid;
     grid-template-columns: [xcol1] 100%;
     grid-template-rows: [xrow1] 70% [xrow2] 30%;
@@ -2803,7 +2803,7 @@ margin-top: 0;
 
         .contact-main {
           width: 85vw;
-          height: 100vh;
+          height: 100%;
           /* height: calc(var(--vh, 1vh) * 100); */
           display: flex;
           flex-flow: row-reverse;
@@ -3199,7 +3199,7 @@ align-items: center;
       }
       .contact-main {
         width: 100vw;
-        height: 80vh;
+        height: 80%;
         /* height: calc(var(--vh, 1vh) * 80); */
         display: flex;
         flex-flow: column-reverse;
