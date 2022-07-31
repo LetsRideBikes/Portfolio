@@ -2,6 +2,7 @@
 
 import { Routes, Route} from 'react-router-dom';
 import ClassicTheme from './ClassicTheme';
+import DarkTheme from './DarkTheme';
 import React, { useState, useEffect } from 'react';
 
 
@@ -24,6 +25,7 @@ const handleClick = async event => {
   return (
 <div className="app-container">
 <Routes>
+<Route path="Dark/*" element={<DarkTheme />}/>
 <Route path="/*" element={<ClassicTheme />}/>
 </Routes>
     </div>

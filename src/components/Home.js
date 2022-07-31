@@ -1,4 +1,5 @@
 import coverphoto from './img/bkg/fibonnaci4.svg';
+import moon from './img/moon.svg';
 import beauty from './img/beauty2.svg';
 import lilsat from './img/lilsat.svg';
 import { Link} from 'react-router-dom';
@@ -19,7 +20,8 @@ const Home = props =>{
           <h1 className="text3">I want to help you bring your ideas to life. <br/>Take a look at my work and read what people say about me.</h1>
           <div className="portfolio-button-container"><Link to="Portfolio" ><button className="portfolio-button">CHECK OUT MY PORTFOLIO</button></Link></div>
           </div>
-          
+         
+      <Link to="Dark" ><img className="light-mode" src={moon}/></Link> 
 </div>
 
 );

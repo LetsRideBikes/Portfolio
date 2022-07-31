@@ -236,6 +236,12 @@ font-family: 'Open Sans', sans-serif;
   
 }
 
+.light-mode {
+  width: 50px;
+  position: absolute;
+  top: 0;
+}
+
 .home_headline {
   width: 60%;
   height: 50%;
