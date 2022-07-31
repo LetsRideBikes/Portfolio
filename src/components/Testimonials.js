@@ -28,13 +28,13 @@ const testimonials = [
         text:
             "I've had the distinct pleasure of collaborating with Keith for over 10 years. Keith has demonstrated an exceptional aptitude for successfully managing any challenge or opportunity thrown his way. He demonstrates a wide breadth of expertise, spanning scientific pursuits to product design, project management and innovation. His professionalism, commitment and passion will propel any project forward." 
     },
-    // {
-    //     name: 'Michael Joseph',
-    //     position: 'President, True Vector',
-    //     photo: require('./img/mikephoto.png'),
-    //     text:
-    //         "Placeholder"
-    // },
+    {
+      name: 'Adam Fournier',
+      position: 'Software Architect, Assorted Solutions',
+      photo: require('./img/adamphoto.png'),
+      text:
+          "As a software engineer working with Keith, I appreciated his commitment to the people using our software. He worked hard to understand who we were serving in order to build better solutions. He would push hard for the best experience, but was not immovable. We were able to balance his vision for the software with the capabilities of the engineering team. Point him at your problem space and introduce him to domain experts. Keith will be a fantastic addition to your team."
+  },
   ];
   
   const [idx, setIdx] = useState(0);
