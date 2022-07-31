@@ -1667,12 +1667,12 @@ font-weight: 400;
 
     .port-drop {
       width: 100%;
-      height: 25px;
+      height: 28px;
       background: transparent;
       color:rgb(41, 41, 41);
-      border-radius: 25px;
-      margin: 0px 0px 0px 0px;
-      padding: 0px 0px 0px 10px;
+      /* border-radius: 25px; */
+      margin: 10px 0px 0px 0px;
+      padding: 0px 0px 8px 0px;
       border: none;
       outline: none;
       font-family: 'Open Sans', sans-serif;
@@ -2946,8 +2946,8 @@ bottom: 25%;
     grid-template-columns: [first] 100% [second] auto;
     grid-template-rows: [row1] 20% [row2] 80% ;
     grid-template-areas: "header"
-                        "body"
-                        "body";
+                         "body"
+                         "body";
     }
    
 
@@ -3233,10 +3233,36 @@ align-items: center;
   
       @media only screen and (max-width: 500px) and (max-height: 470px)  {
 
+.main_content_mobile {
+  height: 80vh;
+}
+
+
+
 .contact-info{
   display: none;
 }
 
-
+.coffee1 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -500%;
+  left: 85%;
+}
+.coffee2 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -500%;
+  left: 85%;
+}
+.coffee3 {
+  width: 5000px;
+  height: 5000px;
+  position: absolute;
+  top: -500%;
+  left: 85%;
+}
 
       }
