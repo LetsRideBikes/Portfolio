@@ -37,6 +37,13 @@ const testimonials = [
         text:
             "As a software engineer working with Keith, I appreciated his commitment to the people using our software. He worked hard to understand who we were serving in order to build better solutions. He would push hard for the best experience, but was not immovable. We were able to balance his vision for the software with the capabilities of the engineering team. Point him at your problem space and introduce him to domain experts. Keith will be a fantastic addition to your team."
     },
+    {
+      name: 'Michael Joseph',
+      position: 'President, True Vector Management Consulting',
+      photo: require('./img/mikephoto.png'),
+      text:
+          "Keith is a dynamic leader who draws from his wealth of technical software development experience as a product manager.  He has a design mindset and can translate business workflows and requirements into product functionality that delights the users of the product.  He has a creative eye and can design user interfaces that are intuitive and easy to use.  He also brings knowledge and expertise as a product owner in an agile setting.  Keith is a solid team player with a focus on doing what is right for the customer."
+  },
   ];
   
   const [idx, setIdx] = useState(0);
