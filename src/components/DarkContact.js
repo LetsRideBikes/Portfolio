@@ -1,6 +1,6 @@
 
 import {Link} from 'react-router-dom';
-// import Resume from './docs/KeithLavoie_Resume2022.pdf'
+import sun from './img/sun.svg';
 import Bird from './Bird';
 import DarkMessageMe from './DarkMessageMe';
 import React, { useState, useEffect } from 'react';
@@ -28,6 +28,8 @@ const DarkContact = props =>{
 
 
     return (
+<div className="contact-megamain">
+
 <div className="contact-main">
 <Bird 
       handleClick={handleClick}
@@ -55,7 +57,8 @@ const DarkContact = props =>{
 
 
 </div>
-
+<Link to="/Contact" ><img className="dark-mode" src={sun}/></Link>
+</div>
 
 
 );

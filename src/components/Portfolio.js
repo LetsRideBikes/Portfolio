@@ -5,7 +5,7 @@ import EregPortfolioSlides from './EregPortfolioSlides';
 import MobilePortfolioSlides from './MobilePortfolioSlides';
 import RMSMobilePortfolioSlides from './RMSMobilePortfolioSlides';
 import BublPortfolioSlides from './BublPortfolioSlides';
-import arrows from './img/arrow.png';
+import arrows from './img/arrow1.svg';
 import { useEffect, useState } from "react";
 
 

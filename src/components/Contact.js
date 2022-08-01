@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import Face from './Face';
 import MessageMe from './MessageMe';
 import React, { useState, useEffect } from 'react';
+import moon from './img/moon.svg';
 
 
 
@@ -28,6 +29,7 @@ const Contact = props =>{
 
 
     return (
+        <div className="contact-megamain">
 <div className="contact-main">
 <Face 
       handleClick={handleClick}
@@ -55,8 +57,8 @@ const Contact = props =>{
 
 
 </div>
-
-
+<Link to="/Dark/Contact" ><img className="light-mode" src={moon}/></Link>
+</div>
 
 );
 }

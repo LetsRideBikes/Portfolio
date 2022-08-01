@@ -6,7 +6,8 @@ import abstractquote from './img/gradientquote2.svg';
 import quotes from './img/quotes.png';
 import quotes2 from './img/quotes2.png';
 import React, { useState, useEffect } from 'react';
-
+import moon from './img/moon.svg';
+import {Link} from 'react-router-dom';
 
 
 const Testimonials = props =>{
@@ -93,6 +94,7 @@ const testimonials = [
 
     return (
 <div className="testimonials_main">
+<Link to="/Dark/Testimonials" ><img className="light-mode" src={moon}/></Link>
  <div className="home-testimonial-container" 
 onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}
  >

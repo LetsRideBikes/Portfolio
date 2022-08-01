@@ -564,10 +564,10 @@ animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
 
 .contact-info{
-  width: 80vw;
+  width: 30vw;
   display: flex;
   flex-flow: column;
-  align-self: center;
+  align-self: left;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -973,7 +973,7 @@ animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 font-family: 'Open Sans', sans-serif;
 font-weight: 400;
 font-size: 1.4vh;
-color: #535353;
+color: #2c2c2c;
 letter-spacing: 0.2ch;
 margin-top: 5px;
 -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -3248,6 +3248,8 @@ align-items: center;
 .contact-info{
   display: none;
 }
+
+
 
 .coffee1 {
   width: 5000px;

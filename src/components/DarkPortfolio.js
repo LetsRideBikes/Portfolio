@@ -5,7 +5,7 @@ import DarkEregPortfolioSlides from './DarkEregPortfolioSlides';
 import DarkMobilePortfolioSlides from './DarkMobilePortfolioSlides';
 import DarkRMSMobilePortfolioSlides from './DarkRMSMobilePortfolioSlides';
 import DarkBublPortfolioSlides from './DarkBublPortfolioSlides';
-import arrows from './img/arrow.png';
+import arrows from './img/arrow2.svg';
 import { useEffect, useState } from "react";
 
 
