@@ -350,8 +350,8 @@ margin: 0px;
 .darkbeauty {
   width: 60%;
   height: 15%;
-    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation-delay: 0s;
   padding: 0px;
 margin: 5px 0px 0px 5px;
