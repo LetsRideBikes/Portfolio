@@ -18,7 +18,7 @@ const DarkHome = props =>{
           <h1 className="darktext2">I'm Keith Lavoie, and I love to create</h1>
           <img className="darkbeauty" src={beauty}/> 
           <h1 className="darktext3">I want to help you bring your ideas to life. <br/>Take a look at my work and read what people say about me.</h1>
-          <div className="portfolio-button-container"><Link to="Portfolio" ><button className="dark-portfolio-button">CHECK OUT MY PORTFOLIO</button></Link></div>
+          <div className="darkportfolio-button-container"><Link to="Portfolio" ><button className="dark-portfolio-button">CHECK OUT MY PORTFOLIO</button></Link></div>
           </div>
           
       <Link to="/*" ><img className="dark-mode" src={sun}/></Link> 
