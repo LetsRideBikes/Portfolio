@@ -31,28 +31,28 @@
 
 .next-slide {
   width: 20px;
-  height: 20px;
+  height: 40px;
 position: absolute;
-background: none;
-right: 0;
+background: rgba(255, 255, 255, 0.404);
+right: 3px;
 bottom: 50%;
 border: none;
-border-radius: 2px;
+border-radius: 5px;
 cursor: pointer;
-opacity: 70%;
+opacity: 90%;
 }
 
 .last-slide {
   width: 20px;
-  height: 20px;
+  height: 40px;
 position: absolute;
-background: none;
+background: rgba(255, 255, 255, 0.404);
 left: 0;
 bottom: 50%;
 border: none;
-border-radius: 2px;
+border-radius: 5px;
 cursor: pointer;
-opacity: 70%;
+opacity: 90%;
 }
 
 
