@@ -1782,6 +1782,7 @@ font-weight: 400;
   position: absolute;
   top: -120%;
   left: 10%;
+  opacity: 20%;
 }
 .coffee2 {
   width: 5000px;
@@ -1789,6 +1790,7 @@ font-weight: 400;
   position: absolute;
   top: -120%;
   left: 20%;
+  opacity: 20%;
 }
 .coffee3 {
   width: 5000px;
@@ -1796,6 +1798,7 @@ font-weight: 400;
   position: absolute;
   top: -120%;
   left: 20%;
+    opacity: 20%;
 }
 
 
