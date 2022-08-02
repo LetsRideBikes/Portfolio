@@ -23,7 +23,7 @@ const testimonials = [
             
     },
     {
-        name: 'Jill Warrington',
+        name: 'Jill Warrington, MD, PhD',
         position: 'Laboratory Director, VT Dept of Health',
         photo: require('./img/jillphoto.png'),
         text:
