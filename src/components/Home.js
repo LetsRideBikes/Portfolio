@@ -11,6 +11,7 @@ const Home = props =>{
 <div className="home_main"    style={{ 
       backgroundImage: `url(${coverphoto})`, 
       backgroundRepeat: 'no-repeat'}}>
+        <div className="lightbulb">
 <img className="lilsat" src={lilsat}/>
 
         <div className="home_headline">
@@ -22,6 +23,7 @@ const Home = props =>{
           </div>
          
       <Link to="Dark" ><img className="light-mode" src={moon}/></Link> 
+      </div>
 </div>
 
 );

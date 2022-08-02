@@ -225,7 +225,7 @@ font-family: 'Open Sans', sans-serif;
 
 .home_main {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-position:center center ;
   background-size: 120%;
   position: relative;
@@ -1705,14 +1705,14 @@ font-weight: 400;
  
   .home_main {
     width: 100%;
-    height: 100--vh;
+
        background-position:center center ;
        background-size: 50%;
     display: flex;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     overflow: hidden;
-    -webkit-animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    /* -webkit-animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
   }
 
 
@@ -2649,7 +2649,8 @@ top: 0;
 
 
         .home_main {
-          height: calc(var(--vh, 1vh) * 100);;
+          /* height: 100vh;
+          height: calc(var(--vh, 1vh) * 100); */
           margin-top: 0px;
           position: relative;
         }
@@ -3049,7 +3050,7 @@ bottom: 25%;
 
       .home_main {
         width: 100vw;
-        height: 100%;
+        /* height: 100%; */
         background-position: center ;
         position: relative;
         display: flex;

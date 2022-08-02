@@ -123,7 +123,7 @@ height: 160px;
   -webkit-tap-highlight-color: transparent;
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation-delay: 2s;
+  animation-delay: 1.8s;
   }
   @-webkit-keyframes tracking-in-expand {
     0% {
@@ -164,8 +164,8 @@ height: 160px;
     font-weight: 600;
     font-size: 6pt;
     position: absolute;
-    right: 5%;
-    top: 5%;
+    right: 3%;
+    top: 3%;
     opacity: 90%;
     padding: 2px;
   }
@@ -185,8 +185,8 @@ height: 160px;
     font-weight: 600;
     font-size: 6pt;
     position: absolute;
-    right: 5%;
-    top: 5%;
+    right: 3%;
+    top: 3%;
     opacity: 90%;
     padding: 2px;
   }
@@ -265,7 +265,8 @@ font-family: 'Open Sans', sans-serif;
 
 .home_main {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh;
+  height: calc(var(--vh, 1vh) * 100); */
   background-position:center center ;
   background-size: 120%;
   position: relative;
@@ -1771,14 +1772,15 @@ font-weight: 400;
  
   .home_main {
     width: 100%;
-    height: 100--vh;
+    /* height: 100vh;
+    height: calc(var(--vh, 1vh) * 100); */
        background-position:center center ;
        background-size: 50%;
     display: flex;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     overflow: hidden;
-    -webkit-animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    /* -webkit-animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 3.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
   }
 
 
@@ -2715,7 +2717,8 @@ top: 0;
 
 
         .home_main {
-          height: calc(var(--vh, 1vh) * 100);;
+          /* height: 100vh;
+          height: calc(var(--vh, 1vh) * 100); */
           margin-top: 0px;
           position: relative;
         }
@@ -3118,7 +3121,7 @@ bottom: 25%;
 
       .home_main {
         width: 100vw;
-        height: 100%;
+        /* height: 100%; */
         background-position: center ;
         position: relative;
         display: flex;
