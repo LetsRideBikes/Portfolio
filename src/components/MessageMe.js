@@ -52,12 +52,12 @@ const MessageMe = props =>{
   return (
     <div className="messageme-container">
     <form className="messageme-form" ref={form} onSubmit={sendEmail}>
+      <div className="bodybox">
+      <textarea className="messageme-body" placeholder={placeholderText} name="message" value={message} onChange={event => setMessage(event.target.value)} /></div>
         <div className="namebox">
       <input className="messageme-input" value={name} onChange={event => setName(event.target.value)} placeholder="Your Name" type="text" name="user_name" /></div>
       <div className="mailbox">
       <input className="messageme-input" value={email} onChange={event => setEmail(event.target.value)} placeholder="Your Email" type="email" name="user_email" /></div>
-      <div className="bodybox">
-      <textarea className="messageme-body" placeholder={placeholderText} name="message" value={message} onChange={event => setMessage(event.target.value)} /></div>
       <button className="messageme-button" disabled={(!name || !email || !message)} type="submit">{buttonText}</button>
     </form>
     </div>
