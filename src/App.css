@@ -57,7 +57,7 @@ grid-template-areas: "blank  blank"
                      "header  body"
                      "header  body"
                      "blank  body";
-overflow: hidden;
+/* overflow: hidden; */
 -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -2141,7 +2141,7 @@ z-index: -10;
   height: 100vh;
 flex-flow: column;
 align-items: center;
-overflow: hidden;
+/* overflow: hidden; */
   display: grid;
   grid-template-columns: [first] 100% [second] auto;
   grid-template-rows: [row1] 20% [row2] auto ;
