@@ -43,13 +43,13 @@ const testimonials = [
     text:
         "Keith is a dynamic leader who draws from his wealth of technical software development experience as a product manager.  He has a design mindset and can translate business workflows and requirements into product functionality that delights the users of the product.  He has a creative eye and can design user interfaces that are intuitive and easy to use.  He also brings knowledge and expertise as a product owner in an agile setting.  Keith is a solid team player with a focus on doing what is right for the customer."
 },
-// {
-//   name: 'Deidre Lozier',
-//   position: 'Director of Client Services, Lucence',
-//   photo: require('./img/ddphoto.png'),
-//   text:
-//       ""
-// },
+{
+  name: 'Vanessa ',
+  position: 'SVP, Operations & Integrated Systems',
+  photo: require('./img/vanessaohoto.jpg'),
+  text:
+      "Keith is a highly capable project, program and product manager. He took early stage concepts and transformed them, helping to drive our organization forward and allowing us to bring products to market faster. His keen attention to detail and solutions orientation is an asset to any team and organization."
+},
   ];
   
   const [idx, setIdx] = useState(0);
